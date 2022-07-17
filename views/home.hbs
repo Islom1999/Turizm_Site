@@ -130,118 +130,49 @@
     </p>
     </div>
 </div>
+{{!-- Best Place --}}
 <div
     class="grid grid-cols-1 md:gird-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8"
     >
-    <div
-    class="bg-[url(/assets/images/demos/1.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Termiz</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/2.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Qarshi</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/3.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Buxoro</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/4.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Andijon</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
+    {{#if PlaceDefaultDB}}
+        {{#each PlaceDefaultDB}}
+            <div
+            class="bg-[url({{img}})] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
+            >
+            <div
+                class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
+            >
+                <h5 class="font-medium text-[25px] mb-2">{{title}}</h5>
+                <p class="text-[12px] leading-0 text-main-gray-200 font-light">
+                {{descr}}
+                </p>
+            </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <h1>Hozircha hech qanaqa ma'lumot kiritilmagan</h1>
+    {{/if}}
 </div>
 <div
     id="more-popular-places"
     class="grid-cols-1 md:gird-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8 mt-5 !hidden"
 >
-    <div
-    class="bg-[url(/assets/images/demos/5.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Nukus</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/6.jpg)] overflow-hidden group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Samarqand</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/7.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Sirdaryo</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/8.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Namangan</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
+    {{#if PlaceLoadDB}}
+        {{#each PlaceLoadDB}}
+            <div
+            class="bg-[url({{img}})] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
+            >
+            <div
+                class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
+            >
+                <h5 class="font-medium text-[25px] mb-2">{{title}}</h5>
+                <p class="text-[12px] leading-0 text-main-gray-200 font-light">
+                {{descr}}
+                </p>
+            </div>
+            </div>
+        {{/each}}
+    {{/if}}
 </div>
 <div class="grid place-content-center mt-5">
     <button
@@ -269,115 +200,45 @@
 <div
     class="grid grid-cols-1 md:gird-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8"
 >
-    <div
-    class="bg-[url(/assets/images/demos/9.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Termiz</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/10.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Qarshi</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/11.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Namangan</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/12.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Buxoro</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
+    {{#if HotelDefaultDB}}
+        {{#each HotelDefaultDB}}
+            <div
+            class="bg-[url({{img}})] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
+            >
+            <div
+                class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
+            >
+                <h5 class="font-medium text-[25px] mb-2">{{title}}</h5>
+                <p class="text-[12px] leading-0 text-main-gray-200 font-light">
+                {{descr}}
+                </p>
+            </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <h1>Hozircha hech qanaqa ma'lumot kiritilmagan</h1>
+    {{/if}}
 </div>
 <div
     id="more-best-hotels"
     class="grid-cols-1 md:gird-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8 mt-5 !hidden"
 >
-    <div
-    class="bg-[url(/assets/images/demos/13.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Andijon</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/14.jpg)] overflow-hidden group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Nukus</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/15.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Navoiy</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
-    <div
-    class="bg-[url(/assets/images/demos/16.jpg)] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
-    >
-    <div
-        class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
-    >
-        <h5 class="font-medium text-[25px] mb-2">Xorazim</h5>
-        <p class="text-[12px] leading-0 text-main-gray-200 font-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        eius ipsum rerum odit quisquam, deleniti voluptatem iste alias
-        </p>
-    </div>
-    </div>
+    {{#if HotelLoadDB}}
+        {{#each HotelLoadDB}}
+            <div
+            class="bg-[url({{img}})] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
+            >
+            <div
+                class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
+            >
+                <h5 class="font-medium text-[25px] mb-2">{{title}}</h5>
+                <p class="text-[12px] leading-0 text-main-gray-200 font-light">
+                {{descr}}
+                </p>
+            </div>
+            </div>
+        {{/each}}
+    {{/if}}
 </div>
 <div class="grid place-content-center mt-5">
     <button
@@ -393,11 +254,9 @@
 <div
     class="px-[5%] md:px-[10%] lg:px-[20%] text-center text-main-gray-100"
 >
-    <h2 class="text-[40px] font-semibold">Top Xizmatlar</h2>
+    <h2 class="text-[40px] font-semibold">{{ServicesPage.titleSection}}</h2>
     <p class="mt-[25px] text-[18px] font-light leading-[31px]">
-    Xizmatlarimizning narxidan qatiy nazar biz barcha ko'rsatilgan
-    xizmatlarimiz uchun yuqori sifatni kafotlatlaymiz va shuning uchun
-    boshqalardan ajralib turamiz
+    {{ServicesPage.descr}}
     </p>
 </div>
 <div class="px-6 space-y-20 xl:space-y-[120px] pt-20 pb-12">
@@ -405,69 +264,33 @@
     class="flex flex-col justify-between space-y-10 xl:space-y-0 xl:flex-row"
     >
     <div class="w-full xl:w-[50%]">
-        <p class="text-[14px] text-main-gray-100 w-[80%]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        ea modi quam porro minus? Quis illo soluta ad autem obcaecati
-        cupiditate. Corrupti eos alias iste vero quidem aspernatur
-        cumque sapiente.
-        </p>
+        <h3 class="text-[20px] text-main-gray-100 w-[80%]">
+        {{ServicesLeftDB.title}}
+        </h3>
         <div class="flex mt-8 text-[15px] text-main-gray-100">
         <div class="w-full">
             <div class="flex w-full pb-3">
             <h6
                 class="w-[80%] text-[13px] font-semibold uppercase pb-5"
             >
-                lorem
+                {{ServicesPage.cost}}
             </h6>
             <h6
                 class="w-[20%] text-[13px] font-semibold uppercase pb-5"
             >
-                ipsum
+                {{ServicesPage.amount}}
             </h6>
             </div>
             <ul>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-y py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
+                {{#each ServicesLeftDB.cost}}
+                <li class="border-t py-3 border-gray-400 flex">
+                    <p class="w-[80%]">
+                    {{content}}
+                    </p>
+                    <p class="w-[20%]">{{amount}} $USD</p>
+                </li>
+                {{/each}}
+                <li class="border-b border-gray-400"></li>
             </ul>
         </div>
         </div>
@@ -478,11 +301,11 @@
         >
             {{HomeDB.btns.learn}}
         </a>
-        <p class="text-[20px]">2000000.00 UZS</p>
+        <p class="text-[20px]">{{AmountLeft}} $USD</p>
         </div>
     </div>
     <img
-        src="/assets/images/default-prices.jpg"
+        src="{{ServicesLeftDB.img}}"
         alt="Offer Image"
         class="w-full xl:w-[45%] object-cover"
     />
@@ -491,71 +314,37 @@
     class="flex flex-col-reverse xl:justify-between xl:flex-row-reverse"
     >
     <div class="w-full xl:w-[50%]">
-        <p class="text-[14px] text-main-gray-100 w-[80%]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        ea modi quam porro minus? Quis illo soluta ad autem obcaecati
-        cupiditate. Corrupti eos alias iste vero quidem aspernatur
-        cumque sapiente.
-        </p>
+        <h3 class="text-[25px] text-main-gray-100 w-[80%]">
+        {{ServicesRightDB.title}}
+        </h3>
         <div class="flex mt-8 xl:pr-24 text-[15px] text-main-gray-100">
+
         <div class="w-full">
             <div class="flex w-full pb-3">
             <h6
                 class="w-[80%] text-[13px] font-semibold uppercase pb-5"
             >
-                lorem
+                {{ServicesPage.cost}}
             </h6>
             <h6
                 class="w-[20%] text-[13px] font-semibold uppercase pb-5"
             >
-                ipsum
+                {{ServicesPage.amount}}
             </h6>
             </div>
             <ul>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-t py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
-            <li class="border-y py-3 border-gray-400 flex">
-                <p class="w-[80%]">
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit.
-                </p>
-                <p class="w-[20%]">30000.00 UZS</p>
-            </li>
+                {{#each ServicesRightDB.cost}}
+                <li class="border-t py-3 border-gray-400 flex">
+                    <p class="w-[80%]">
+                    {{content}}
+                    </p>
+                    <p class="w-[20%]">{{amount}} $USD</p>
+                </li>
+                {{/each}}
+                <li class="border-b border-gray-400"></li>
             </ul>
         </div>
+
         </div>
         <div class="flex justify-between items-center mt-5">
         <a
@@ -564,11 +353,11 @@
         >
             {{HomeDB.btns.learn}}
         </a>
-        <p class="text-[20px]">2000000.00 UZS</p>
+        <p class="text-[20px]">{{AmountRight}} $USD</p>
         </div>
     </div>
     <img
-        src="/assets/images/default-prices.jpg"
+        src="{{ServicesRightDB.img}}"
         alt="Offer Image"
         class="w-full mb-10 xl:w-[45%] object-cover"
     />

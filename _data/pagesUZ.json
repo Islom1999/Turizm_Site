@@ -105,6 +105,14 @@
                 "leftTwo":"Maxfiylik siyosati",
                 "right":"© 2020 Boysun Ko'xinur Travel, Barcha huquqlar himoyalangan"
             }
+        },
+        "servicesPage": {
+            "titleHome": "Bizning Xizmatlar",
+            "titleSection": "Top Xizmatlar",
+            "img": "/assets/images/slider/2.png",
+            "descr": "Xizmatlarimizning narxidan qatiy nazar biz barcha ko'rsatilgan xizmatlarimiz uchun yuqori sifatni kafotlatlaymiz va shuning uchun boshqalardan ajralib turamiz",
+            "cost": "Xarajatlar ro'yhati",
+            "amount": "narxi"
         }
     }
 ]

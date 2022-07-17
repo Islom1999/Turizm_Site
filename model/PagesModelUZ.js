@@ -1,41 +1,6 @@
 const mongoose = require('mongoose')
 
 const PagesModelUZ = new mongoose.Schema({
-    homePage: {
-        slider: [
-            {
-                img: {type: 'string', required: true },
-                title: {type: 'string', required: true },
-                descr: {type: 'string', required: true },
-            }
-        ], 
-        section: {
-            descr: {type: 'string', required: true },
-            statis: [
-                {
-                    num: {type: 'number'},
-                    content: {type: 'string'}
-                }
-            ],
-            video: {
-                src: {type: 'string', required: true},
-                err: {type: 'string', required: true}
-            },
-            places: {
-                title: {type: 'string', required: true},
-                descr: {type: 'string', required: true}
-            },
-            hotels: {
-                title: {type: 'string', required: true},
-                descr: {type: 'string', required: true}
-            }
-        },
-        btns: {
-            load: {type: 'string', required: true},
-            more: {type: 'string', required: true},
-            learn: {type: 'string', required: true},
-        }
-    },
     navbar: {
         logoSrc: {type: 'string', required: true},
         links: {
@@ -95,7 +60,51 @@ const PagesModelUZ = new mongoose.Schema({
             leftTwo:{type: 'string', required: true},
             right:{type: 'string', required: true},
         }
+    },
+    homePage: {
+        slider: [
+            {
+                img: {type: 'string', required: true },
+                title: {type: 'string', required: true },
+                descr: {type: 'string', required: true },
+            }
+        ], 
+        section: {
+            descr: {type: 'string', required: true },
+            statis: [
+                {
+                    num: {type: 'number'},
+                    content: {type: 'string'}
+                }
+            ],
+            video: {
+                src: {type: 'string', required: true},
+                err: {type: 'string', required: true}
+            },
+            places: {
+                title: {type: 'string', required: true},
+                descr: {type: 'string', required: true}
+            },
+            hotels: {
+                title: {type: 'string', required: true},
+                descr: {type: 'string', required: true}
+            }
+        },
+        btns: {
+            load: {type: 'string', required: true},
+            more: {type: 'string', required: true},
+            learn: {type: 'string', required: true},
+        }
+    },
+    servicesPage: {
+        titleHome: {type: "string", required: true},
+        titleSection: {type: "string", required: true},
+        img: {type: "string", required: true},
+        descr: {type: "string", required: true},
+        cost: {type: "string", required: true},
+        amount: {type: "string", required: true},
     }
+    
 })
 
 module.exports = mongoose.model('PagesUZ', PagesModelUZ)
