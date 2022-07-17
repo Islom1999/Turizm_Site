@@ -24,8 +24,14 @@ app.get('/', (req, res) => {
 })
 
 app.use('/uz', require('./routes/pagesUz'))
+app.use('/eng', require('./routes/pagesEng'))
+app.use('/ru', require('./routes/pagesRu'))
+
 app.use('/admin', require('./routes/adminRoutes'))
 
+app.get('/:id', (req, res) => {
+    res.redirect('/uz')
+})
 
 const PORT = process.env.PORT || 5000
 

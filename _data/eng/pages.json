@@ -112,7 +112,66 @@
             "img": "/assets/images/slider/2.png",
             "descr": "Xizmatlarimizning narxidan qatiy nazar biz barcha ko'rsatilgan xizmatlarimiz uchun yuqori sifatni kafotlatlaymiz va shuning uchun boshqalardan ajralib turamiz",
             "cost": "Xarajatlar ro'yhati",
-            "amount": "narxi"
+            "amount": "narxi" 
+        },
+        "offer": {
+            "slider": [
+                {"img": "/assets/images/slider/1.jpg"},
+                {"img": "/assets/images/slider/2.png"},
+                {"img": "/assets/images/slider/3.png"},
+                {"img": "/assets/images/slider/2.png"},
+                {"img": "/assets/images/slider/1.jpg"},
+                {"img": "/assets/images/slider/3.png"}
+            ]
+        },
+        "about": {
+            "header": {
+                "img": "/assets/images/slider/2.png",
+                "title": "Biz Haqimizda"
+            },
+            "section": {
+                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "prising": [
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    }
+                ],
+                "discover": {
+                    "img": "/assets/images/about-img.jpg",
+                    "title": "Discover an Immersive Camping Experience",
+                    "descr": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer.",
+                    "elem": [
+                        {"text": "Books"},
+                        {"text": "Wi-Fi reception on the whole campground"},
+                        {"text": "Recycling"},
+                        {"text": "Possibility to park a boat"},
+                        {"text": "Barbecue area"},
+                        {"text": "Playground for the little ones"},
+                        {"text": "Recycling"}
+                    ]
+                }
+            }
         }
     }
 ]

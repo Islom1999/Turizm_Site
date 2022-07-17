@@ -4,26 +4,66 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
-const Pages = require('./model/PagesModelUZ')
-const Place = require('./model/PlaceModelUZ')
-const Hotel = require('./model/HotelModelUZ')
-const Services = require('./model/ServicesModelUZ')
+// UZBEK DATA MODEL
+const PagesUZ = require('./model/uz/PagesModel')
+const PlaceUZ = require('./model/uz/PlaceModel')
+const HotelUZ = require('./model/uz/HotelModel')
+const ServicesUZ = require('./model/uz/ServicesModel')
+
+// ENG DATA MODEL
+const PagesENG = require('./model/eng/PagesModel')
+const PlaceENG = require('./model/eng/PlaceModel')
+const HotelENG = require('./model/eng/HotelModel')
+const ServicesENG = require('./model/eng/ServicesModel')
+
+// RU DATA MODEL
+const PagesRU = require('./model/ru/PagesModel')
+const PlaceRU = require('./model/ru/PlaceModel')
+const HotelRU = require('./model/ru/HotelModel')
+const ServicesRU = require('./model/ru/ServicesModel')
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
 })
 
-const PagesDB = JSON.parse(fs.readFileSync(`${__dirname}/_data/pagesUZ.json`), 'utf-8')
-const PlaceDB = JSON.parse(fs.readFileSync(`${__dirname}/_data/placeUZ.json`), 'utf-8')
-const HotelDB = JSON.parse(fs.readFileSync(`${__dirname}/_data/hotelUZ.json`), 'utf-8')
-const ServicesDB = JSON.parse(fs.readFileSync(`${__dirname}/_data/servicesUZ.json`), 'utf-8')
+// UZ DATA JSON 
+const PagesDB_UZ = JSON.parse(fs.readFileSync(`${__dirname}/_data/uz/pages.json`), 'utf-8')
+const PlaceDB_UZ = JSON.parse(fs.readFileSync(`${__dirname}/_data/uz/place.json`), 'utf-8')
+const HotelDB_UZ = JSON.parse(fs.readFileSync(`${__dirname}/_data/uz/hotel.json`), 'utf-8')
+const ServicesDB_UZ = JSON.parse(fs.readFileSync(`${__dirname}/_data/uz/services.json`), 'utf-8')
+
+// ENG DATA JSON 
+const PagesDB_ENG = JSON.parse(fs.readFileSync(`${__dirname}/_data/eng/pages.json`), 'utf-8')
+const PlaceDB_ENG = JSON.parse(fs.readFileSync(`${__dirname}/_data/eng/place.json`), 'utf-8')
+const HotelDB_ENG = JSON.parse(fs.readFileSync(`${__dirname}/_data/eng/hotel.json`), 'utf-8')
+const ServicesDB_ENG = JSON.parse(fs.readFileSync(`${__dirname}/_data/eng/services.json`), 'utf-8')
+
+// RUS DATA JSON 
+const PagesDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/pages.json`), 'utf-8')
+const PlaceDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/place.json`), 'utf-8')
+const HotelDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/hotel.json`), 'utf-8')
+const ServicesDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/services.json`), 'utf-8')
 
 const importData = async() => {
     try{
-        await Pages.create(PagesDB)
-        await Place.create(PlaceDB)
-        await Hotel.create(HotelDB)
-        await Services.create(ServicesDB)
+
+        // UZ DATA ADD MONGO DB
+        await PagesUZ.create(PagesDB_UZ)
+        await PlaceUZ.create(PlaceDB_UZ)
+        await HotelUZ.create(HotelDB_UZ)
+        await ServicesUZ.create(ServicesDB_UZ)
+
+        // ENG DATA ADD MONGO DB
+        await PagesENG.create(PagesDB_ENG)
+        await PlaceENG.create(PlaceDB_ENG)
+        await HotelENG.create(HotelDB_ENG)
+        await ServicesENG.create(ServicesDB_ENG)
+
+        // RUS DATA ADD MONGO DB
+        await PagesRU.create(PagesDB_RU)
+        await PlaceRU.create(PlaceDB_RU)
+        await HotelRU.create(HotelDB_RU)
+        await ServicesRU.create(ServicesDB_RU)
 
         console.log('Data imported DB ...')
         process.exit()
@@ -34,10 +74,24 @@ const importData = async() => {
 
 const deleteData = async () => {
     try{
-        await Pages.deleteMany()
-        await Place.deleteMany()
-        await Hotel.deleteMany()
-        await Services.deleteMany()
+
+        // UZ DATA REMOVE
+        await PagesUZ.deleteMany()
+        await PlaceUZ.deleteMany()
+        await HotelUZ.deleteMany()
+        await ServicesUZ.deleteMany()
+
+        // ENG DATA REMOVE
+        await PagesENG.deleteMany()
+        await PlaceENG.deleteMany()
+        await HotelENG.deleteMany()
+        await ServicesENG.deleteMany()
+
+        // RU DATA REMOVE
+        await PagesRU.deleteMany()
+        await PlaceRU.deleteMany()
+        await HotelRU.deleteMany()
+        await ServicesRU.deleteMany()
 
         console.log('Data deleted ...')
     }catch(err){

@@ -1,15 +1,16 @@
-const PagesUZ = require('../model/PagesModelUZ')
-const PlaceUZ = require('../model/PlaceModelUZ')
-const HotelUZ = require('../model/HotelModelUZ')
-const ServicesUZ = require('../model/ServicesModelUZ')
+// UZ DATA MODELS REQUIRE
+const Pages = require('../model/uz/PagesModel')
+const Place = require('../model/uz/PlaceModel')
+const Hotel = require('../model/uz/HotelModel')
+const Services = require('../model/uz/ServicesModel')
 
 
 const getHomePage = async(req,res) => {
     try{
-        const PagesDB = await PagesUZ.find().lean()
-        const PlaceDB = await PlaceUZ.find().lean()
-        const HotelDB = await HotelUZ.find().lean()
-        const ServicesDB = await ServicesUZ.find().lean()
+        const PagesDB = await Pages.find().lean()
+        const PlaceDB = await Place.find().lean()
+        const HotelDB = await Hotel.find().lean()
+        const ServicesDB = await Services.find().lean()
 
         let AmountLeft = 0
         ServicesDB[0].cost.forEach(elem => {
@@ -45,11 +46,15 @@ const getHomePage = async(req,res) => {
 }
 const getAboutPage = async(req,res) => {
     try{
-        const PagesDB = await PagesUZ.find().lean()
+        const PagesDB = await Pages.find().lean()
         res.render('about', {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
-            Footer: PagesDB[0].footer
+            Footer: PagesDB[0].footer,
+
+            AboutDB: PagesDB[0].about,
+            statisDB: PagesDB[0].homePage.section.statis,
+            videoDB: PagesDB[0].homePage.section.video
         })
     }catch(err){
         console.log(err)
@@ -57,7 +62,7 @@ const getAboutPage = async(req,res) => {
 }
 const getContactPage = async(req,res) => {
     try{
-        const PagesDB = await PagesUZ.find().lean()
+        const PagesDB = await Pages.find().lean()
         res.render('contact', {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
@@ -69,8 +74,8 @@ const getContactPage = async(req,res) => {
 }
 const getServicesPage = async(req,res) => {
     try{
-        const PagesDB = await PagesUZ.find().lean()
-        const ServicesDB = await ServicesUZ.find().lean()
+        const PagesDB = await Pages.find().lean()
+        const ServicesDB = await Services.find().lean()
 
         ServicesDB.forEach(elem => {
             let amount = 0
@@ -98,11 +103,29 @@ const getServicesPage = async(req,res) => {
 }
 const getOfferPage = async(req,res) => {
     try{
-        const PagesDB = await PagesUZ.find().lean()
+        const PagesDB = await Pages.find().lean()
+        const ServicesDB = await Services.find({_id: req.params.id}).lean()
+
+        let amount = 0
+        ServicesDB[0].cost.forEach(elem => {
+            amount += parseFloat(elem.amount)
+        })
+
+        ServicesDB[0].allAmount = amount
+
+        ServicesDB[0].btn = PagesDB[0].homePage.btns.learn
+
+        ServicesDB[0].content = {
+            cost: PagesDB[0].servicesPage.cost,
+            amount: PagesDB[0].servicesPage.amount
+        }
+
         res.render('offer', {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
-            Footer: PagesDB[0].footer
+            Footer: PagesDB[0].footer,
+            ServicesDB: ServicesDB[0],
+            slider: PagesDB[0].offer.slider
         })
     }catch(err){
         console.log(err)

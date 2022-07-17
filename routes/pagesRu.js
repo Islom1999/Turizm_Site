@@ -5,7 +5,7 @@ const {
     getContactPage,
     getServicesPage,
     getOfferPage
-} = require('../controllers/pagesUzControllers')
+} = require('../controllers/pagesRuControllers')
 
 const router = Router()
 
@@ -16,7 +16,5 @@ router.get('/services', getServicesPage)
 router.get('/services/:id', getOfferPage)
 
 router.get('/contact', getContactPage)
-
-//{{../url}}/services/{{_id}}
 
 module.exports = router

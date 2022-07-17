@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const PagesModelUZ = new mongoose.Schema({
+const PagesModelRU = new mongoose.Schema({
     navbar: {
         logoSrc: {type: 'string', required: true},
         links: {
@@ -103,8 +103,36 @@ const PagesModelUZ = new mongoose.Schema({
         descr: {type: "string", required: true},
         cost: {type: "string", required: true},
         amount: {type: "string", required: true},
+    },
+    offer: {
+        slider: [
+            {img: { type: "string", required: true }}
+        ]
+    },
+    about: {
+        header: {
+            img: {type: "string", required: true},
+            title: {type: "string", required: true}
+        },
+        section: {
+            descr: {type: "string", required: true},
+            prising: [
+                {
+                    title: {type: 'string', required: true},
+                    descr: {type: 'string', required: true}
+                }
+            ],
+            discover: {
+                img: {type: 'string', required: true},
+                title: {type: 'string', required: true},
+                descr: {type: 'string', required: true},
+                elem: [
+                    {text: {type: 'string', required: true}}
+                ],
+            }
+        }
     }
     
 })
 
-module.exports = mongoose.model('PagesUZ', PagesModelUZ)
+module.exports = mongoose.model('PagesRU', PagesModelRU)

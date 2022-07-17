@@ -25,12 +25,12 @@
         class="fixed top-0 z-50 left-0 w-full h-full bg-[#ffffffbc] opacity-0 pointer-events-none duration-200"
     ></div>
     <div
-        class="h-[400px] flex items-center text-white bg-cover bg-[url(/assets/images/slider/2.png)]"
+        class="h-[400px] flex items-center text-white bg-cover bg-[url({{AboutDB.header.img}})]"
     >
         <h1
         class="container mx-auto px-12 font-prompt text-[50px] font-semibold leading-[67px]"
         >
-        Biz Haqimizda
+        {{AboutDB.header.title}}
         </h1>
     </div>
 </header>
@@ -44,62 +44,39 @@
     <img src="/assets/images/logo.png" alt="Logo" class="mx-auto" />
     </div>
     <p class="text-[18px] font-light leading-[31px] text-main-gray-100">
-    Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif
-    qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi
-    dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop
-    narxalrni ham taqdim etamiz.
+    {{AboutDB.section.descr}}
     </p>
 </div>
-<div
-    class="pt-[60px] flex flex-wrap text-center text-[13px] text-main-gray-100 font-prompt font-normal tracking-[.65px]"
->
-    <div class="w-full md:w-1/3 lg:w-1/5 pt-10 md:p-0">
-    <i
-        class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
-    ></i>
-    <p class="pt-3">320 Mashinalar</p>
-    </div>
-    <div class="w-full md:w-1/3 lg:w-1/5 pt-10 md:p-0">
-    <i
-        class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
-    ></i>
-    <p class="pt-3">93 Sayohlik hududlar</p>
-    </div>
-    <div class="w-full md:w-1/3 lg:w-1/5 pt-10 md:p-0">
-    <i
-        class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
-    ></i>
-    <p class="pt-3">932 Mijozlar</p>
-    </div>
-    <div
-    class="w-full md:w-1/2 pt-10 md:pl-[105px] md:pt-[50px] lg:p-0 lg:w-1/5"
-    >
-    <i
-        class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
-    ></i>
-    <p class="pt-3">329 Mehmonxonalar</p>
-    </div>
-    <div
-    class="w-full md:w-1/2 pt-10 md:pr-[105px] md:pt-[50px] lg:p-0 lg:w-1/5"
-    >
-    <i
-        class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
-    ></i>
-    <p class="pt-3">32 Xizmatlar</p>
-    </div>
+<div class="pt-[60px] flex flex-wrap text-center text-[13px] text-main-gray-100 font-prompt font-normal tracking-[.65px]">
+    {{#each statisDB}}
+        {{#if number}}
+            <div class="w-full md:w-1/2 pt-10 md:pl-[105px] md:pt-[50px]lg:p-0 lg:w-1/5">
+            <i
+                class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
+            ></i>
+            <p class="pt-3">{{content}}</p>
+            </div>
+        {{else}}
+            <div class="w-full md:w-1/3 lg:w-1/5 pt-10 md:p-0">
+            <i
+                class="fa-solid fa-expand text-[70px] text-main-green-100 duration-150 hover:-translate-y-1"
+            ></i>
+            <p class="pt-3">{{content}}</p>
+            </div>
+        {{/if}}
+    {{/each}}
 </div>
 </section>
 <!-- VIDEO -->
 <section class="container mx-auto px-6 pb-28">
 <div class="relative group w-[80%] mx-auto">
     <video
-    src="/assets/videos/about.mp4"
+    src="{{videoDB.src}}"
     alt="About Us"
     class="w-full rounded-xl"
     id="about-video"
     >
-    Kechirasiz sizning brauzeringiz ushbu fileni qo'llab quvvatlamaydi.
-    Iltimos boshqa brauzerdan foydalaning.
+    {{videoDB.err}}
     </video>
     <div
     id="about-video-thumbnail"
@@ -118,91 +95,27 @@
 <section
 class="container mx-auto px-10 pb-[116px] flex flex-wrap font-prompt"
 >
+
+{{#each AboutDB.section.prising}}
 <div class="w-full md:w-1/2 lg:w-1/3 mb-[50px] lg:mb-[60px]">
     <div class="flex space-x-3 items-end text-black">
     <i class="fa-solid fa-toilet text-[40px]"></i>
-    <h4 class="text-[20px]">Parking in the camp</h4>
+    <h4 class="text-[20px]">{{title}}</h4>
     </div>
     <p
     class="text-main-gray-200 leading-[25.95px] text-[15px] font-light mt-3 mr-1"
     >
-    Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam
-    blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget
-    ultricies erat.
+    {{descr}}
     </p>
 </div>
-<div class="w-full md:w-1/2 lg:w-1/3 mb-[50px] lg:mb-[60px]">
-    <div class="flex space-x-3 items-end text-black">
-    <i class="fa-solid fa-toilet text-[40px]"></i>
-    <h4 class="text-[20px]">Parking in the camp</h4>
-    </div>
-    <p
-    class="text-main-gray-200 leading-[25.95px] text-[15px] font-light mt-3 mr-1"
-    >
-    Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam
-    blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget
-    ultricies erat.
-    </p>
-</div>
-<div class="w-full md:w-1/2 lg:w-1/3 mb-[50px] lg:mb-[60px]">
-    <div class="flex space-x-3 items-end text-black">
-    <i class="fa-solid fa-toilet text-[40px]"></i>
-    <h4 class="text-[20px]">Parking in the camp</h4>
-    </div>
-    <p
-    class="text-main-gray-200 leading-[25.95px] text-[15px] font-light mt-3 mr-1"
-    >
-    Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam
-    blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget
-    ultricies erat.
-    </p>
-</div>
-<div class="w-full md:w-1/2 lg:w-1/3 mb-[50px]">
-    <div class="flex space-x-3 items-end text-black">
-    <i class="fa-solid fa-toilet text-[40px]"></i>
-    <h4 class="text-[20px]">Parking in the camp</h4>
-    </div>
-    <p
-    class="text-main-gray-200 leading-[25.95px] text-[15px] font-light mt-3 mr-1"
-    >
-    Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam
-    blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget
-    ultricies erat.
-    </p>
-</div>
-<div class="w-full md:w-1/2 lg:w-1/3 mb-[50px]">
-    <div class="flex space-x-3 items-end text-black">
-    <i class="fa-solid fa-toilet text-[40px]"></i>
-    <h4 class="text-[20px]">Parking in the camp</h4>
-    </div>
-    <p
-    class="text-main-gray-200 leading-[25.95px] text-[15px] font-light mt-3 mr-1"
-    >
-    Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam
-    blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget
-    ultricies erat.
-    </p>
-</div>
-<div class="w-full md:w-1/2 lg:w-1/3 mb-[50px]">
-    <div class="flex space-x-3 items-end text-black">
-    <i class="fa-solid fa-toilet text-[40px]"></i>
-    <h4 class="text-[20px]">Parking in the camp</h4>
-    </div>
-    <p
-    class="text-main-gray-200 leading-[25.95px] text-[15px] font-light mt-3 mr-1"
-    >
-    Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam
-    blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget
-    ultricies erat.
-    </p>
-</div>
+{{/each}}
 </section>
 <!-- DISCOVER -->
 <section
 class="container mx-auto px-6 pb-40 flex flex-col xl:flex-row space-y-10 font-prompt"
 >
 <img
-    src="/assets/images/about-img.jpg"
+    src="{{AboutDB.section.discover.img}}"
     alt="About Us"
     class="asldfnhsdkjfb nSJDBASJKBF ASJNAJSKBFDN LSKCNASKJFBHV ASDNASKFNSDK ASNFSAKJF"
 />
@@ -212,25 +125,17 @@ class="container mx-auto px-6 pb-40 flex flex-col xl:flex-row space-y-10 font-pr
     <h2
     class="text-[35px] md:text-[40px] leading-[1.325em] font-medium break-words w-full"
     >
-    Discover an Immersive<br />
-    Camping Experience
+    {{AboutDB.section.discover.title}}
     </h2>
     <p class="mt-[31px] text-[18px] font-light leading-[31px]">
-    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-    Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-    ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit
-    amet, consectetuer.
+    {{AboutDB.section.discover.descr}}
     </p>
     <ul
     class="mt-[30px] list-inside text-[18px] leading-[35px] w-full list"
     >
-    <li>Books</li>
-    <li>Wi-Fi reception on the whole campground</li>
-    <li>Recycling</li>
-    <li>Possibility to park a boat</li>
-    <li>Barbecue area</li>
-    <li>Playground for the little ones</li>
-    <li>Recycling</li>
+        {{#each AboutDB.section.discover.elem}}
+            <li>{{text}}</li>
+        {{/each}}
     </ul>
 </div>
 </section>
