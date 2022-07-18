@@ -22,9 +22,10 @@ const getHomePage = async(req,res) => {
         })
 
         res.render('home', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langENG: 'eng',
             HomeDB: PagesDB[0].homePage,
 
             PlaceDefaultDB: PlaceDB.slice(0, 4),
@@ -48,9 +49,10 @@ const getAboutPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
         res.render('about', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langENG: 'eng',
 
             AboutDB: PagesDB[0].about,
             statisDB: PagesDB[0].homePage.section.statis,
@@ -64,7 +66,7 @@ const getContactPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
         res.render('contact', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer 
         })
@@ -91,9 +93,10 @@ const getServicesPage = async(req,res) => {
         })
 
         res.render('services', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langENG: 'eng',
             ServicesPage: PagesDB[0].servicesPage,
             ServicesDB
         })
@@ -104,7 +107,11 @@ const getServicesPage = async(req,res) => {
 const getOfferPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
-        const ServicesDB = await Services.find({_id: req.params.id}).lean()
+        const ServicesDB = await Services.find({_id: req.params.id}).lean() 
+        
+        // http://my-travel.uz/
+
+        // Turizm_91-62
 
         let amount = 0
         ServicesDB[0].cost.forEach(elem => {
@@ -121,9 +128,10 @@ const getOfferPage = async(req,res) => {
         }
 
         res.render('offer', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langENG: 'eng',
             ServicesDB: ServicesDB[0],
             slider: PagesDB[0].offer.slider
         })

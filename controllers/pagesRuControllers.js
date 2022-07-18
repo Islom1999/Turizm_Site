@@ -22,9 +22,10 @@ const getHomePage = async(req,res) => {
         })
 
         res.render('home', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/ru',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langRU: 'ru',
             HomeDB: PagesDB[0].homePage,
 
             PlaceDefaultDB: PlaceDB.slice(0, 4),
@@ -48,9 +49,10 @@ const getAboutPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
         res.render('about', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/ru',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langRU: 'ru',
 
             AboutDB: PagesDB[0].about,
             statisDB: PagesDB[0].homePage.section.statis,
@@ -64,7 +66,7 @@ const getContactPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
         res.render('contact', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/ru',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer 
         })
@@ -91,9 +93,10 @@ const getServicesPage = async(req,res) => {
         })
 
         res.render('services', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/ru',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langRU: 'ru',
             ServicesPage: PagesDB[0].servicesPage,
             ServicesDB
         })
@@ -121,9 +124,10 @@ const getOfferPage = async(req,res) => {
         }
 
         res.render('offer', {
-            url: process.env.URL + '/uz',
+            url: process.env.URL + '/ru',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langRU: 'ru',
             ServicesDB: ServicesDB[0],
             slider: PagesDB[0].offer.slider
         })

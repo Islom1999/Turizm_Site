@@ -25,6 +25,7 @@ const getHomePage = async(req,res) => {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langUZ: 'uz',
             HomeDB: PagesDB[0].homePage,
 
             PlaceDefaultDB: PlaceDB.slice(0, 4),
@@ -51,6 +52,7 @@ const getAboutPage = async(req,res) => {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langUZ: 'uz',
 
             AboutDB: PagesDB[0].about,
             statisDB: PagesDB[0].homePage.section.statis,
@@ -94,6 +96,7 @@ const getServicesPage = async(req,res) => {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langUZ: 'uz',
             ServicesPage: PagesDB[0].servicesPage,
             ServicesDB
         })
@@ -124,6 +127,7 @@ const getOfferPage = async(req,res) => {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
+            langUZ: 'uz',
             ServicesDB: ServicesDB[0],
             slider: PagesDB[0].offer.slider
         })

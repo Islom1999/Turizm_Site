@@ -25,7 +25,6 @@ const handleNavbarOpenMenu = () => {
 }
 
 const handleAuthModal = () => {
-  console.log("worked")
   const modalOverlay = $("#login-modal-overlay");
   const modal = $("#login-modal");
   const modalCloser = $("#login-modal-closer");
@@ -39,7 +38,6 @@ const handleAuthModal = () => {
   }
   
   for (btn of modalOpener) {
-    console.log(btn)
     btn.addEventListener("click", () => {
       console.log("clicked")
       toggleData(1, "all");
@@ -47,13 +45,44 @@ const handleAuthModal = () => {
   }
   
   modalCloser.addEventListener("click", () => {
-    console.log("clicked")
     toggleData(0, "none");
   });
 
   modalOverlay.addEventListener("click", () => {
     toggleData(0, "none")
   })
+}
+
+const handleLanguage = () => {
+  const lang = localStorage.getItem("lang");
+  const changeLocaltionByLang = lang => {
+    const path = window.location.pathname.slice(1)
+    const newPath = path.slice(path.indexOf('/'))
+
+    localStorage.setItem("lang", lang);
+    window.location.pathname = `/${lang + newPath}`;
+  }
+  console.log(window.location.pathname)
+console.log(lang)
+  if (window.location.pathname === "/") {
+    window.location.pathname = `/${lang || "eng"}`;
+  }
+
+  const LangToEngBtns = $All(".lang-to-eng");
+  const LangToUzBtns = $All(".lang-to-uz");
+  const LangToRuBtns = $All(".lang-to-ru");
+
+  for (let langToEngBtn of LangToEngBtns) {
+    langToEngBtn.addEventListener("click", () => changeLocaltionByLang("eng"));
+  }
+
+  for (let langToRuBtn of LangToRuBtns) {
+    langToRuBtn.addEventListener("click", () => changeLocaltionByLang("ru"));
+  }
+
+  for (let langToUzBtn of LangToUzBtns) {
+    langToUzBtn.addEventListener("click", () => changeLocaltionByLang("uz"));
+  }
 }
 
 const navbar = $("#navbar")
@@ -70,7 +99,7 @@ window.addEventListener("scroll", () => {
 window.addEventListener("DOMContentLoaded", () => {
   handleNavbarOpenMenu();
   handleAuthModal();
-
+  handleLanguage()
   tailwind.config = {
     theme: {
       extend: {

@@ -25,95 +25,186 @@
         <a href="{{url}}/contact">{{Navbar.links.contact}}</a>
         </li>
     </ul>
+    
     <div id="navbar-arrows" class="lg:hidden w-[26px] relative">
         <span
-        class="w-full h-px bg-black absolute top-0 duration-200"
+            class="w-full h-px bg-black absolute top-0 duration-200"
         ></span>
         <span
-        class="w-full h-px bg-black absolute top-[6px] duration-200"
+            class="w-full h-px bg-black absolute top-[6px] duration-200"
         ></span>
         <span
-        class="w-full h-px bg-black absolute top-[12px] duration-200"
+            class="w-full h-px bg-black absolute top-[12px] duration-200"
         ></span>
     </div>
     <div
-        id="mobile-navbar"
-        class="absolute top-full left-0 w-full z-10 bg-white max-h-0 overflow-hidden"
-        style="transition: all 600ms"
+    id="mobile-navbar"
+    class="absolute top-full left-0 w-full z-10 bg-white max-h-0 overflow-hidden"
+    style="transition: all 600ms"
     >
-        <ul class="py-[25px] px-10 space-y-[20px]">
+    <ul class="py-[25px] px-10 space-y-[20px]">
         <li class="text-main-green-100">
-            <a href="/">bosh sahifa</a>
+        <a href="/">bosh sahifa</a>
         </li>
         <li class="hover:text-main-green-100">
-            <a href="/about.html">biz Haqimizda</a>
+        <a href="/about.html">biz Haqimizda</a>
         </li>
         <li class="hover:text-main-green-100">
-            <a href="/services.html">xizmatlar</a>
+        <a href="/services.html">xizmatlar</a>
         </li>
         <li class="hover:text-main-green-100">
-            <a href="/contact.html">aloqa</a>
+        <a href="/contact.html">aloqa</a>
         </li>
-        <li class="divide-x-2 divide-main-black-100 items-center flex">
-            <button
-            class="hover:text-main-green-100 duration-200 pr-[15px] login-modal-opener uppercase"
-            >
-            Kirish
-            </button>
-            <div class="px-[15px] relative group">
-            <p
-                class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
-            >
-                EN
-            </p>
-            <ul
-                class="bg-white absolute bottom-[120%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
-            >
-                <li
-                class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer"
-                >
-                O'Z
-                </li>
-                <li
-                class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer"
-                >
-                RU
-                </li>
-            </ul>
-            </div>
-        </li>
-        </ul>
-    </div>
-    <div
-        class="hidden lg:flex divide-x-2 divide-main-black-100 items-center"
-    >
-        <button
-        type="button"
-        class="px-[15px] hover:text-main-green-100 duration-200 login-modal-opener uppercase"
+        <li
+        class="divide-x-2 divide-main-black-100 items-center flex"
         >
-        Kirish
+        <button
+            class="hover:text-main-green-100 duration-200 pr-[15px] login-modal-opener uppercase"
+        >
+            Kirish
         </button>
         <div class="px-[15px] relative group">
-        <p
+            {{#if langUZ}}
+                <p
+                class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
+                >
+                O'Z
+                </p>
+                <ul
+                class="bg-white absolute bottom-[120%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
+                >
+                <li
+                    class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-eng"
+                >
+                    ENG
+                </li>
+                <li
+                    class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-ru"
+                >
+                    RU
+                </li>
+                </ul>
+            {{/if}}
+            {{#if langENG}}
+                <p
+                class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
+                >
+                ENG
+                </p>
+                <ul
+                class="bg-white absolute bottom-[120%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
+                >
+                <li
+                    class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-uz"
+                >
+                    O'Z
+                </li>
+                <li
+                    class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-ru"
+                >
+                    RU
+                </li>
+                </ul>
+            {{/if}}
+            {{#if langRU}}
+                <p
+                class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
+                >
+                ENG
+                </p>
+                <ul
+                class="bg-white absolute bottom-[120%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
+                >
+                <li
+                    class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-uz"
+                >
+                    O'Z
+                </li>
+                <li
+                    class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-uz"
+                >
+                    O'Z
+                </li>
+                </ul>
+            {{/if}}
+        </div>
+        </li>
+    </ul>
+    </div>
+    <div
+    class="hidden lg:flex divide-x-2 divide-main-black-100 items-center"
+    >
+    <button
+        type="button"
+        class="px-[15px] hover:text-main-green-100 duration-200 login-modal-opener uppercase"
+    >
+        Kirish
+    </button>
+    <div class="px-[15px] relative group">
+        {{#if langUZ}}
+            <p
             class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
-        >
-            EN
-        </p>
-        <ul
-            class="bg-white absolute top-[110%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
-        >
-            <li
-            class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer"
             >
             O'Z
+            </p>
+            <ul
+            class="bg-white absolute top-[110%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
+            >
+            <li
+                class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-eng"
+            >
+                ENG
             </li>
             <li
-            class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer"
+                class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-ru"
+            >
+                RU
+            </li>
+            </ul>
+        {{/if}}
+        {{#if langRU}}
+            <p
+            class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
             >
             RU
+            </p>
+            <ul
+            class="bg-white absolute top-[110%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
+            >
+            <li
+                class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-uz"
+            >
+                O'Z
             </li>
-        </ul>
-        </div>
+            <li
+                class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-eng"
+            >
+                ENG
+            </li>
+            </ul>
+        {{/if}}
+        {{#if langENG}}
+            <p
+            class="cursor-pointer peer relative after:absolute after:top-3 after:left-1/2 after:-translate-x-1/2 after:w-10 after:h-5 after:bg-transparent after:z-0"
+            >
+            ENG
+            </p>
+            <ul
+            class="bg-white absolute top-[110%] shadow-lg left-1/2 -translate-x-1/2 opacity-0 pointer-events-none duration-300 group-hover:opacity-100 group-hover:pointer-events-auto hover:pointer-events-auto hover:opacity-100 peer-hover:opacity-100 peer-hover:pointer-events-auto z-10"
+            >
+            <li
+                class="pt-3 pb-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-uz"
+            >
+                O'Z
+            </li>
+            <li
+                class="pb-3 pt-1.5 px-5 hover:text-main-green-100 duration-200 cursor-pointer lang-to-ru"
+            >
+                RU
+            </li>
+            </ul>
+        {{/if}}
+    </div>
     </div>
     </nav>
 </div>

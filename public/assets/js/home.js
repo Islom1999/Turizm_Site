@@ -2,7 +2,8 @@ const handleMainSlider = () => {
   const prevBtn = $("#main-slider-prev");
   const nextBtn = $("#main-slider-next");
   const slides = $All(".main-slide");
-  let activeSlide = 1;
+  slides[1].style.opacity = "1"
+  let activeSlide = 1; 
 
   const moveSlider = () => {
     activeSlide = activeSlide > slides.length - 1 ? 0 : activeSlide < 0 ? slides.length - 1 : activeSlide;
