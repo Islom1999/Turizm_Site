@@ -1,6 +1,7 @@
 const fs = require('fs')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
+const { v4 } = require('uuid')
 
 dotenv.config()
 
@@ -43,6 +44,13 @@ const PagesDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/pages.json`
 const PlaceDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/place.json`), 'utf-8')
 const HotelDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/hotel.json`), 'utf-8')
 const ServicesDB_RU = JSON.parse(fs.readFileSync(`${__dirname}/_data/ru/services.json`), 'utf-8')
+
+ServicesDB_UZ.forEach( (elem, index) => {
+    let id = v4()
+    elem.id = id
+    ServicesDB_ENG[index].id = id
+    ServicesDB_RU[index].id = id
+})
 
 const importData = async() => {
     try{

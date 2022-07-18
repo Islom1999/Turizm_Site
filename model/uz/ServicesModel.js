@@ -1,8 +1,14 @@
+const { v4 } = require('uuid')
 const mongoose = require('mongoose')
 
 const ServicesModelUZ = new mongoose.Schema(
     [
         {
+            id: {
+                type: 'string',
+                default: v4,
+                required: true
+            },
             title: {type: "string", required: true},
             img: {type: "string", required: true},
             cost:[ 

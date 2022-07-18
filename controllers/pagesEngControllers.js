@@ -107,7 +107,7 @@ const getServicesPage = async(req,res) => {
 const getOfferPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
-        const ServicesDB = await Services.find({_id: req.params.id}).lean() 
+        const ServicesDB = await Services.find({id: req.params.id}).lean() 
         
         // http://my-travel.uz/
 

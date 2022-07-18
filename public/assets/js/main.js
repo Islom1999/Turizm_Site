@@ -58,6 +58,7 @@ const handleLanguage = () => {
   const changeLocaltionByLang = lang => {
     const path = window.location.pathname.slice(1)
     const newPath = path.slice(path.indexOf('/'))
+    console.log(newPath)
 
     localStorage.setItem("lang", lang);
     window.location.pathname = `/${lang + newPath}`;
