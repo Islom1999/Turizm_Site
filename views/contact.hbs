@@ -25,12 +25,12 @@
         class="fixed top-0 z-50 left-0 w-full h-full bg-[#ffffffbc] opacity-0 pointer-events-none duration-200"
     ></div>
     <div
-        class="h-[400px] flex items-center text-white bg-cover bg-[url(/assets/images/slider/2.png)]"
+        class="h-[400px] flex items-center text-white bg-cover bg-[url({{PagesDB.header.img}})]"
     >
         <h1
         class="container mx-auto px-12 font-prompt text-[50px] font-semibold leading-[67px]"
         >
-        Biz bilan Aloqa
+        {{PagesDB.header.title}}
         </h1>
     </div>
 </header>
@@ -40,57 +40,63 @@ class="pt-[112px] pb-[88px] container mx-auto px-6 flex flex-col lg:flex-row lg:
 >
 <div class="w-full lg:w-1/2">
     <h2 class="pb-[18px] text-[25px] font-semibold leading-[38px]">
-    Info@camp.com elektron pochtasiga xabar yuboring
+    {{PagesDB.section.inforTitle}}
     </h2>
     <p
     class="text-main-gray-100 text-[15px] leading-[25.95px] font-light mb-8"
     >
-    Savolingiz bormi? hoziroq aloqaga chiqing?
+    {{PagesDB.section.inforDescr}}
     </p>
     <ul class="font-light text-[18px] space-y-1">
-    <li>Reception phone: +64 (0)50 745 6473</li>
-    <li>Reservations: +64 (0)50 745 6473</li>
-    <li>Lodge: +64 (0)50 745 6473</li>
-    <li class="!mt-5">Email: info@camp.com</li>
+    <li>{{PagesDB.section.phoneOne}}</li>
+    <li>{{PagesDB.section.phoneTwo}}</li>
+    <li>{{PagesDB.section.telegram}}</li>
+    <li class="!mt-5">{{PagesDB.section.phoneOne}}</li>
     <li class="!mt-3 flex space-x-5">
-        <span>Ijtimoiy tarmoqlar:</span>
+        <span>{{Footer.network.title}}</span>
         <div class="space-x-4">
-        <i
-            class="fa-brands fa-facebook-f hover:text-main-green-100 duration-200 cursor-pointer"
-        ></i>
-        <i
-            class="fa-brands fa-instagram hover:text-main-green-100 duration-200 cursor-pointer"
-        ></i>
-        <i
-            class="fa-brands fa-telegram hover:text-main-green-100 duration-200 cursor-pointer"
-        ></i>
+            <a href="{{Footer.network.facebook.link}}">
+                <i
+                    class="fa-brands fa-facebook-f hover:text-main-green-100 duration-200 cursor-pointer"
+                ></i>
+            </a>
+            <a href="{{Footer.network.instagram.link}}">
+                <i
+                    class="fa-brands fa-instagram hover:text-main-green-100 duration-200 cursor-pointer"
+                ></i>
+            </a>
+            <a href="{{Footer.network.telegram.link}}">
+                <i
+                    class="fa-brands fa-telegram hover:text-main-green-100 duration-200 cursor-pointer"
+                ></i>
+            </a>
         </div>
     </li>
     </ul>
 </div>
 <div class="w-full lg:w-1/2">
     <h2 class="pb-[18px] text-[25px] font-semibold leading-[38px]">
-    Xabar Yuboring
+    {{PagesDB.section.formTitle}}
     </h2>
     <p
     class="text-main-gray-100 text-[15px] leading-[25.95px] font-light mb-5"
     >
-    Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring
+    {{PagesDB.section.formDescr}}
     </p>
     <form>
     <textarea
-        placeholder="Xabar *"
+        placeholder="{{PagesDB.section.formTextValue}}"
         class="text-[15px] font-light text-main-gray-100 outline-none w-full h-[180px] border border-gray-600 focus:border-black px-5 py-[11px] mb-[20px]"
     ></textarea>
     <div class="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0">
         <input
         type="text"
-        placeholder="Ismingiz *"
+        placeholder="{{PagesDB.section.formNameValue}}"
         class="text-[15px] font-light text-main-gray-100 outline-none w-full sm:w-1/2 border border-gray-600 focus:border-black px-5 py-[11px] !mb-[26px]"
         />
         <input
         type="email"
-        placeholder="Elektron pochtangiz *"
+        placeholder="{{PagesDB.section.formEmailValue}}"
         class="text-[15px] font-light text-main-gray-100 outline-none w-full sm:w-1/2 border border-gray-600 focus:border-black px-5 py-[11px] !mb-[26px]"
         />
     </div>
@@ -99,7 +105,7 @@ class="pt-[112px] pb-[88px] container mx-auto px-6 flex flex-col lg:flex-row lg:
         type="button"
         class="group hover:text-main-green-100 text-[13px] font-semibold tracking-wider space-x-2 uppercase"
         >
-        <span>YUBORISH</span>
+        <span>{{PagesDB.section.formBtn}}</span>
         <i
             class="fa-solid fa-arrow-right-long text-[15px] w-8 text-start group-hover:pl-2 duration-200"
         ></i>

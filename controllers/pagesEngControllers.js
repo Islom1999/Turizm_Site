@@ -68,7 +68,9 @@ const getContactPage = async(req,res) => {
         res.render('contact', {
             url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
-            Footer: PagesDB[0].footer 
+            Footer: PagesDB[0].footer,
+            langRU: 'ru',
+            PagesDB: PagesDB[0].contact
         })
     }catch(err){
         console.log(err)

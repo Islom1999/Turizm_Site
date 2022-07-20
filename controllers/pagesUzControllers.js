@@ -65,10 +65,14 @@ const getAboutPage = async(req,res) => {
 const getContactPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
+
         res.render('contact', {
             url: process.env.URL + '/uz',
             Navbar: PagesDB[0].navbar,
-            Footer: PagesDB[0].footer 
+            Footer: PagesDB[0].footer,
+            langUZ: 'uz',
+            PagesDB: PagesDB[0].contact,
+
         })
     }catch(err){
         console.log(err)
@@ -102,7 +106,7 @@ const getServicesPage = async(req,res) => {
         })
     }catch(err){
         console.log(err)
-    }
+    } 
 }
 const getOfferPage = async(req,res) => {
     try{

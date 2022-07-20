@@ -1,5 +1,5 @@
 const { Router } = require('express')
-// const upload = require('../utils/fileUploads.js')
+const upload = require('../utils/fileUploads.js')
 
 const {
     getAdminPage,
@@ -8,7 +8,12 @@ const {
     getServicesPage,
     getContactPage,
     getOfferPage
-} = require('../controllers/adminControllers')
+} = require('../controllers/admin/adminControllers')
+
+const {
+    addServices,
+    removeServices
+} = require('../controllers/admin/adminServices')
 
 const router = Router()   
 
@@ -17,8 +22,13 @@ router.get('/', getAdminPage)
 router.get('/home', getHomePage)
 router.get('/about', getAboutPage)
 router.get('/services', getServicesPage)
+router.post('/services/servis/add',  upload.single('image'), addServices)
+router.post('/services/:id/remove', removeServices)
+
+router.get('/services/:id', getOfferPage)
+//admin/services/servis/add
+
 router.get('/contact', getContactPage)
-router.get('/offer', getOfferPage)
 
 module.exports = router
 

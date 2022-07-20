@@ -131,6 +131,26 @@ const PagesModelRU = new mongoose.Schema({
                 ],
             }
         }
+    },
+    contact: {
+        header: {
+            img: {type: 'string', required: true},
+            title: {type: 'string', required: true}
+        },
+        section: {
+            inforTitle: {type: 'string', required: true},
+            inforDescr: {type: 'string', required: true},
+            phoneOne: {type: 'string', required: true},
+            phoneTwo: {type: 'string', required: true},
+            telegram: {type: 'string', required: true},
+            email: {type: 'string', required: true},
+            formTitle: {type: 'string', required: true},
+            formDescr: {type: 'string', required: true},
+            formTextValue: {type: 'string', required: true},
+            formNameValue: {type: 'string', required: true},
+            formEmailValue: {type: 'string', required: true},
+            formBtn: {type: 'string', required: true},
+        }
     }
     
 })

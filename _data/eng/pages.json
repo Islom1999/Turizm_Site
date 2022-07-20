@@ -172,6 +172,26 @@
                     ]
                 }
             }
+        },
+        "contact": {
+            "header": {
+                "img": "/assets/images/slider/2.png",
+                "title": "Biz bilan Aloqa"
+            },
+            "section": {
+                "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
+                "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
+                "phoneOne": "Reception phone: +64 (0)50 745 6473",
+                "phoneTwo": "Reservations: +64 (0)50 745 6473",
+                "telegram": "Lodge: +64 (0)50 745 6473",
+                "email": "Email: info@camp.com",
+                "formTitle": "Xabar Yuboring",
+                "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",
+                "formTextValue": "Xabar *",
+                "formNameValue": "Ismingiz *",
+                "formEmailValue": "Elekton Pochtangiz",
+                "formBtn": "Yuborish"
+            }
         }
     }
 ]

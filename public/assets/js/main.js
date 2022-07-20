@@ -54,36 +54,39 @@ const handleAuthModal = () => {
 }
 
 const handleLanguage = () => {
-  const lang = localStorage.getItem("lang");
-  const changeLocaltionByLang = lang => {
-    const path = window.location.pathname.slice(1)
-    const newPath = path.slice(path.indexOf('/'))
-    console.log(newPath)
-
-    localStorage.setItem("lang", lang);
-    window.location.pathname = `/${lang + newPath}`;
+  if(window.location.pathname.indexOf('/') !== 'admin'){
+    const lang = localStorage.getItem("lang");
+    const changeLocaltionByLang = lang => {
+      const path = window.location.pathname.slice(1)
+      const newPath = path.slice(path.indexOf('/'))
+      console.log(newPath)
+  
+      localStorage.setItem("lang", lang);
+      window.location.pathname = `/${lang + newPath}`;
+    }
+ 
+    if (window.location.pathname === "/") {
+      window.location.pathname = `/${lang || "eng"}`;
+    }
+  
+    const LangToEngBtns = $All(".lang-to-eng");
+    const LangToUzBtns = $All(".lang-to-uz");
+    const LangToRuBtns = $All(".lang-to-ru");
+  
+    for (let langToEngBtn of LangToEngBtns) {
+      langToEngBtn.addEventListener("click", () => changeLocaltionByLang("eng"));
+    }
+  
+    for (let langToRuBtn of LangToRuBtns) {
+      langToRuBtn.addEventListener("click", () => changeLocaltionByLang("ru"));
+    }
+  
+    for (let langToUzBtn of LangToUzBtns) {
+      langToUzBtn.addEventListener("click", () => changeLocaltionByLang("uz"));
+    }
+    
   }
-  console.log(window.location.pathname)
-console.log(lang)
-  if (window.location.pathname === "/") {
-    window.location.pathname = `/${lang || "eng"}`;
-  }
-
-  const LangToEngBtns = $All(".lang-to-eng");
-  const LangToUzBtns = $All(".lang-to-uz");
-  const LangToRuBtns = $All(".lang-to-ru");
-
-  for (let langToEngBtn of LangToEngBtns) {
-    langToEngBtn.addEventListener("click", () => changeLocaltionByLang("eng"));
-  }
-
-  for (let langToRuBtn of LangToRuBtns) {
-    langToRuBtn.addEventListener("click", () => changeLocaltionByLang("ru"));
-  }
-
-  for (let langToUzBtn of LangToUzBtns) {
-    langToUzBtn.addEventListener("click", () => changeLocaltionByLang("uz"));
-  }
+  console.log('salom')
 }
 
 const navbar = $("#navbar")
