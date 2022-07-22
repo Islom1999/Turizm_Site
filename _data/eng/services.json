@@ -4,19 +4,19 @@
         "img": "/assets/images/demos/1.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Cost of transport service",
                 "amount": "260"
             },
             {
-                "content": "2 kecha mehmonxona xarajatlari",
+                "content": "2 nights hotel expenses",
                 "amount": "300"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Cost of meals",
                 "amount": "200"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Guide service and comission fees",
                 "amount": "90"
             }
         ],
@@ -27,19 +27,19 @@
         "img": "/assets/images/demos/2.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Cost of transport service",
                 "amount": "175"
             },
             {
-                "content": "1 kecha mehmonxona xarajatlari",
+                "content": "1 night hotel expenses",
                 "amount": "150"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Cost of meals",
                 "amount": "100"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Guide service and comission fees",
                 "amount": "90"
             }
         ]
@@ -49,19 +49,19 @@
         "img": "/assets/images/demos/3.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Cost of transport service",
                 "amount": "180"
             },
             {
-                "content": "1 kecha mehmonxona xarajatlari",
+                "content": "1 night hotel expenses",
                 "amount": "150"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Cost of meals",
                 "amount": "100"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Guide service and comission fees",
                 "amount": "90"
             }
         ],
@@ -72,19 +72,19 @@
         "img": "/assets/images/demos/4.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Cost of transport service",
                 "amount": "350"
             },
             {
-                "content": "2 kecha mehmonxona xarajatlari",
+                "content": "2 nights hotel expenses",
                 "amount": "300"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Cost of meals",
                 "amount": "200"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Guide service and comission fees",
                 "amount": "100"
             }
         ]

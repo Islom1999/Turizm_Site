@@ -1,4 +1,4 @@
-const { v4 } = require('uuid')
+const { v4 } = require('uuid') 
 const mongoose = require('mongoose')
 
 const ServicesModelUZ = new mongoose.Schema(

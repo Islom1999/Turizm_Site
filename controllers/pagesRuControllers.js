@@ -13,13 +13,17 @@ const getHomePage = async(req,res) => {
         const ServicesDB = await Services.find().lean()
 
         let AmountLeft = 0
-        ServicesDB[0].cost.forEach(elem => {
-            AmountLeft += parseFloat(elem.amount)
-        })
+        if(Boolean(ServicesDB[0])){
+            ServicesDB[0].cost.forEach(elem => {
+                AmountLeft += parseFloat(elem.amount)
+            })
+        }
         let AmountRight = 0
-        ServicesDB[1].cost.forEach(elem => {
-            AmountRight += parseFloat(elem.amount)
-        })
+        if(Boolean(ServicesDB[1])){
+            ServicesDB[1].cost.forEach(elem => {
+                AmountRight += parseFloat(elem.amount)
+            })
+        }
 
         res.render('home', {
             url: process.env.URL + '/ru',

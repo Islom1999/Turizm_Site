@@ -4,89 +4,89 @@
             "slider": [
                 {
                     "img": "/assets/images/slider/1.jpg",
-                    "title": "Yuqori Sifat",
-                    "descr": "Bizning eng katta ustunligimiz, Sayohlarning Xizmatimizdan 100%, qoniqishidir."
+                    "title": "high quality",
+                    "descr": "Our biggest advantage is 100% satisfaction of tourists with our service."
                 },
                 {
                     "img": "/assets/images/slider/2.png",
-                    "title": "Biz bilan sayohat qiling",
-                    "descr": "Eng yaxshi sifat hamyonbop narx barchasi bizda."
+                    "title": "Travel with us",
+                    "descr": "The best quality, affordable price all with us."
                 },
                 {
                     "img": "/assets/images/slider/3.png",
-                    "title": "Yangi dunyolarni kashf qiling",
-                    "descr": "Biz bilan birgalikda qiziqarli joylarni kasf qiling va hech qachon ko'rmagan manzaralaringizdan rohatlaning"
+                    "title": "Discover new worlds",
+                    "descr": "Discover interesting places with us end enjoy the scenery you have never seen before"
                 }
             ],
             "section": {
-                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "descr": "Boysun Ko'xinur Travel is a team offering the highest quality tourism services. We offer you the opportunity to discover a new world for yourself in Uzbekistan and offer the highest quality at affordable price.",
                 "statis": [
-                    {"content": "320 Mashinalar"},
-                    {"content": "93 Sayohlik hududlar"},
-                    {"content": "932 Mijozlar"},
-                    {"num": 3, "content": "329 Mehmonxonalar"},
-                    {"num": 4, "content": "32 Xizmatlar"}
+                    {"content": "320 Transports"},
+                    {"content": "93 Tourism areas"},
+                    {"content": "932 Customers"},
+                    {"num": 3, "content": "329 Hotels"},
+                    {"num": 4, "content": "32 Services"}
                 ],
                 "video": {
                     "src": "/assets/videos/about.mp4",
-                    "err": "Kechirasiz sizning brauzeringiz ushbu fileni qo'llab quvvatlamaydi. Iltimos boshqa brauzerdan foydalaning."
+                    "err": "Sorry, your browser does not support this file. Please use a different browser."
                 },
                 "places": {
-                    "title": "Mashhur Joylar",
-                    "descr": "Biz bilan O'zbekistonning eng mashhur joylarini kashf eting"
+                    "title": "Popular places",
+                    "descr": "Discover the most famous places of Uzbekistan with us"
                 },
                 "hotels": {
-                    "title": "Eng Yaxshi Mehmonxonalar",
-                    "descr": "Biz eng yuqori sifat bilan eng sifatli mehmonxonalarni sizga taklif qilamiz."
+                    "title": "The best hotels",
+                    "descr": "We offer to you the best hotels with the highest quality."
                 }
             },
             "btns": {
-                "load": "Ko'proq Yuklash",
-                "more": "Ko'proq",
-                "learn": "Batafsil"
+                "load": "Load more",
+                "more": "More",
+                "learn": "More"
             }
         },
         "navbar": {
             "logoSrc": "/assets/images/logo.png",
             "links": {
-                "home": "Bosh sahifa",
-                "about": "Biz Haqimizda",
-                "services": "Xizmatlar",
-                "contact": "Aloqa"
+                "home": "Home",
+                "about": "About",
+                "services": "Services",
+                "contact": "Contact"
                 },
                 "reg": {
-                    "login": "Kirish"
+                    "login": "Login"
                 }
         },
         "footer": {
             "content": {
                 "title": "Boysun Ko'xinur<br/> Travel",
-                "descr": "Boysun Ko'xinur Travel O'zbekiston bo'yicha eng sifatli sayohlik agentligi."
+                "descr": "Boysun Ko'xinur Travel is the best quality travel agency in Uzbekistan."
             },
             "links": {
-                "title": "Havolalar",
-                "home": "Bosh sahifa",
-                "about": "Biz Haqimizda",
-                "services": "Xizmatlar",
-                "contact": "Aloqa"
+                "title": "Links",
+                "home": "Home",
+                "about": "About",
+                "services": "Services",
+                "contact": "Contact"
             },
             "contact": {
-                "title": "Aloqa",
+                "title": "Contact",
                 "location": {
-                    "key": "Manzil:",
+                    "key": "Location:",
                     "value": "Via Venti Settembre, Ireland"
                 },
                 "phone": {
-                    "key": "Telefon:",
+                    "key": "Telephone:",
                     "value": "+31 555 777 83"
                 },
                 "email": {
-                    "key": "Elektron Pochta:",
+                    "key": "e-mail:",
                     "value": "kamperen@qode.com"
                 }
             },
             "network": {
-                "title": "Ijtimoiy Tarmoqlar",
+                "title": "Social networks",
                 "facebook": {
                     "link": "https://www.facebook.com",
                     "content": "Facebook"
@@ -101,18 +101,18 @@
                 }
             },
             "privacy": {
-                "leftOne":"Foydalanish shartlari",
-                "leftTwo":"Maxfiylik siyosati",
-                "right":"© 2020 Boysun Ko'xinur Travel, Barcha huquqlar himoyalangan"
+                "leftOne":"Terms of use",
+                "leftTwo":"Privacy Policy",
+                "right":"© 2020 Boysun Ko'xinur Travel, all rights are reserved"
             }
         },
         "servicesPage": {
-            "titleHome": "Bizning Xizmatlar",
-            "titleSection": "Top Xizmatlar",
+            "titleHome": "Our services",
+            "titleSection": "Top services",
             "img": "/assets/images/slider/2.png",
-            "descr": "Xizmatlarimizning narxidan qatiy nazar biz barcha ko'rsatilgan xizmatlarimiz uchun yuqori sifatni kafotlatlaymiz va shuning uchun boshqalardan ajralib turamiz",
-            "cost": "Xarajatlar ro'yhati",
-            "amount": "narxi" 
+            "descr": "Regardless of the price of our services, we guarantee high quality for all our services and that's why we stand out from the rest",
+            "cost": "The list of expenses",
+            "amount": "Price" 
         },
         "offer": {
             "slider": [

@@ -1,7 +1,13 @@
 const mongoose = require('mongoose')
+const { v4 } = require('uuid')
 
 const HotelModelUZ = new mongoose.Schema(
     {
+        id: {
+            type: 'string',
+            default: v4,
+            required: true
+        },
         img: {type: "string", required: true},
         title: {type: "string", required: true},
         descr: {type: "string", required: true},

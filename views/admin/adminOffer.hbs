@@ -95,7 +95,7 @@
                             <p class="w-[80%]">
                             {{content}}
                             </p>
-                            <p class="w-[20%]">{{amount}} $USD</p>
+                            <p class="w-[20%]">{{amount}} USD</p>
                         </li>
                     {{/each}}
                         <li class="border-b border-gray-400"></li>
@@ -109,7 +109,7 @@
                 >
                     {{ServicesDB.btn}}
                 </a>
-                <p class="text-[20px]">{{ServicesDB.allAmount}} $USD</p>
+                <p class="text-[20px]">{{ServicesDB.allAmount}} USD</p>
             </div>
         </div>
         <img
@@ -131,7 +131,7 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
 
-            <form action="/admin/services/servis/add"  method="POST" enctype="multipart/form-data" class="text-center row">
+            <form action="/admin/services/{{ServicesDB.id}}/update"  method="POST" enctype="multipart/form-data" class="text-center row">
                 <div class="row">
                     <hr>
                     <h1 class="mt-5">YANGI XIZMAT QO'SHISH</h1>
@@ -165,7 +165,7 @@
                     </div>
                     <div class="form-group my-3 col-12">
                         <label for="image">XIZMAT UCHUN RASM TANLANG</label>
-                        <input required 
+                        <input 
                             type="file" 
                             class="form-control-file bg-secondary" 
                             id="image"
@@ -333,7 +333,7 @@
             </div>
             </div>
         </div>
-        <form action="/admin/services/{{ServicesDB.id}}/remove" method="POST" class="text-center">
+        <form action="/admin/services/{{ServicesDB.id}}/romove" method="POST" class="text-center">
             <button type="submit" class="col-6 btn btn-primary m-auto my-3">USHBU XIZMATNI SAYTDAN O'CHIRISH</button>
         </form>
     </div>

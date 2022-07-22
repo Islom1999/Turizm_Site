@@ -17,4 +17,8 @@ router.get('/services/:id', getOfferPage)
 
 router.get('/contact', getContactPage)
 
-module.exports = router
+router.get('/:id', (req, res) => {
+    res.redirect('/eng/')
+})
+
+module.exports = router 

@@ -12,23 +12,55 @@ const {
 
 const {
     addServices,
-    removeServices
+    removeServices,
+    updateServices
 } = require('../controllers/admin/adminServices')
+
+const {
+    addHotel,
+    removeHotel
+} = require('../controllers/admin/adminHotels')
+
+const {
+    addPlace,
+    removePlace
+} = require('../controllers/admin/adminPlaces')
+
+const {
+    getAdminLoginPage,
+    postLogin
+} = require('../controllers/admin/adminLogin')
+
+const {guest, protected} = require('../middlewares/adminLogin')
 
 const router = Router()   
 
 // "/" => "url + /admin"
-router.get('/', getAdminPage)
-router.get('/home', getHomePage)
-router.get('/about', getAboutPage)
-router.get('/services', getServicesPage)
-router.post('/services/servis/add',  upload.single('image'), addServices)
-router.post('/services/:id/remove', removeServices)
+router.get('/login', getAdminLoginPage)
+router.post('/login', postLogin) 
 
-router.get('/services/:id', getOfferPage)
+router.get('/', protected, getAdminPage)
+router.get('/home', protected, getHomePage)
+router.post('/home/hotel/add', protected, upload.single('image'), addHotel)
+router.post('/home/hotel/:id/remove', protected, removeHotel) 
+
+router.post('/home/place/add', protected, upload.single('image'), addPlace) 
+router.post('/home/place/:id/remove', protected, removePlace) 
+
+router.get('/about', protected, getAboutPage)
+router.get('/services', protected, getServicesPage)
+router.post('/services/servis/add', protected,  upload.single('image'), addServices)
+router.post('/services/:id/remove', protected, removeServices)
+router.post('/services/:id/update', protected, upload.single('image'), updateServices)
+
+router.get('/services/:id', protected, getOfferPage)
 //admin/services/servis/add
 
-router.get('/contact', getContactPage)
+router.get('/contact', protected, getContactPage)
+
+router.get('/:id', (req, res) => {
+    res.redirect('/admin/login')
+})
 
 module.exports = router
 

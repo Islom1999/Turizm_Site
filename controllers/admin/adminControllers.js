@@ -7,9 +7,9 @@ const Services = require('../../model/uz/ServicesModel')
 const PagesRU = require('../../model/ru/PagesModel')
 const PagesENG = require('../../model/eng/PagesModel')
 
-const getAdminPage = async(req,res) => {
+const getAdminPage = async(req,res) => { 
     try{
-        res.render('admin/dash', {
+        return res.render('admin/dash', {
             admin: 'admin',
             urlAdmin: process.env.URL,
             url: process.env.URL + 'uz',
@@ -42,16 +42,20 @@ const getHomePage = async(req,res) => {
     }
 
     let AmountLeft = 0
-    ServicesDB[0].cost.forEach(elem => {
-        AmountLeft += parseFloat(elem.amount)
-    })
+    if(Boolean(ServicesDB[0])){
+        ServicesDB[0].cost.forEach(elem => {
+            AmountLeft += parseFloat(elem.amount)
+        })
+    }
     let AmountRight = 0
-    ServicesDB[1].cost.forEach(elem => {
-        AmountRight += parseFloat(elem.amount)
-    })
+    if(Boolean(ServicesDB[1])){
+        ServicesDB[1].cost.forEach(elem => {
+            AmountRight += parseFloat(elem.amount)
+        })
+    }
 
     try{
-        res.render('admin/adminHome', {
+        return res.render('admin/adminHome', {
             admin: 'admin',
             urlAdmin: process.env.URL,
             url: process.env.URL + 'uz',
@@ -83,7 +87,7 @@ const getHomePage = async(req,res) => {
 const getAboutPage = async(req,res) => {
     const PagesDB = await Pages.find().lean()
     try{
-        res.render('admin/adminAbout', {
+        return res.render('admin/adminAbout', {
             admin: 'admin',
             urlAdmin: process.env.URL,
             url: process.env.URL + 'uz',
@@ -117,7 +121,7 @@ const getServicesPage = async(req,res) => {
             }
         })
  
-        res.render('admin/adminServices', {
+        return res.render('admin/adminServices', {
             admin: 'admin',
             urlAdmin: process.env.URL,
             url: process.env.URL + 'uz',
@@ -136,7 +140,7 @@ const getContactPage = async(req,res) => {
     try{
         const PagesDB = await Pages.find().lean()
         
-        res.render('admin/adminContact', {
+        return res.render('admin/adminContact', {
             admin: 'admin',
             urlAdmin: process.env.URL,
             url: process.env.URL + 'uz',
@@ -170,7 +174,7 @@ const getOfferPage = async(req,res) => {
             amount: PagesDB[0].servicesPage.amount
         }
 
-        res.render('admin/adminOffer', {
+        return res.render('admin/adminOffer', {
             admin: 'admin',
             urlAdmin: process.env.URL,
             url: process.env.URL + 'uz',

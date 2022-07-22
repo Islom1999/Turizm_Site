@@ -4,6 +4,9 @@ const path = require('path')
 const env = require('dotenv')
 const connectDB = require('./config/configDb')
 
+const session = require('express-session')
+const MongoStore = require('connect-mongodb-session')(session)
+
 const app = express()
 
 env.config() 
@@ -12,6 +15,21 @@ connectDB()
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}));
+
+// initilize to daabase
+
+const store = new MongoStore({
+    collection: 'sessions',
+    uri: process.env.MONGO_URI
+})
+
+app.use(session({
+    secret: process.env.SECTION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    store
+}))
+
 
 app.use(express.static(path.join(__dirname, 'public')));
 

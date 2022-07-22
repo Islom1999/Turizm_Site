@@ -52,6 +52,20 @@ ServicesDB_UZ.forEach( (elem, index) => {
     ServicesDB_RU[index].id = id
 })
 
+PlaceDB_UZ .forEach( (elem, index) => {
+    let id = v4()
+    elem.id = id
+    PlaceDB_ENG[index].id = id
+    PlaceDB_RU[index].id = id
+})
+
+HotelDB_UZ .forEach( (elem, index) => {
+    let id = v4()
+    elem.id = id
+    HotelDB_ENG[index].id = id
+    HotelDB_RU[index].id = id
+})
+
 const importData = async() => {
     try{
 
