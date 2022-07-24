@@ -1,0 +1,64 @@
+[
+    {
+        "uz": {
+            "title": "Boshqaruv paneli",
+            "header": {
+                "textOne": "Bosh Sahifa",
+                "textTwo": "Boshqaruv paneli"
+            },
+            "pages":{
+                "profile": "PROFIL",
+                "profileUpdate": "PROFILNI TAHRIRLASH",
+                "profileServices": "KO'RSATILGAN XIZMATLAR",
+                "profileLogOut": "CHIQISH"
+            },
+            "dash": {
+                "fullname": "To'liq Ism",
+                "userName": "Foydalanish Nomi",
+                "email": "Elektron Pochta",
+                "phone": "Telefon Raqam",
+                "descr": "Tavsif"
+            }
+        },
+        "eng": {
+            "title": "Control Panel",
+            "header": {
+                "textOne": "Home Page",
+                "textTwo": "Control Panel"
+            },
+            "pages":{
+                "profile": "PROFILE",
+                "profileUpdate": "PROFILNE UPDATE",
+                "profileServices": "SERVICES PROVIDED",
+                "profileLogOut": "LOG OUT"
+            },
+            "dash": {
+                "fullname": "Full Name",
+                "userName": "User Name",
+                "email": "Email",
+                "phone": "Phone",
+                "descr": "Description"
+            }
+        },
+        "ru": {
+            "title": "Панель управления",
+            "header": {
+                "textOne": "Главная страница",
+                "textTwo": "Панель управления"
+            },
+            "pages":{
+                "profile": "ПРОФИЛЬ",
+                "profileUpdate": "РЕДАКТИРОВАТЬ ПРОФИЛЬ",
+                "profileServices": "УСЛУГИ, ПРЕДОСТАВЛЯЕМЫЕ",
+                "profileLogOut": "ВЫХОД"
+            },
+            "dash": {
+                "fullname": "ФИО",
+                "userName": "Название использования",
+                "email": "Эл. адрес",
+                "phone": "Номер телефона",
+                "descr": "Описание"
+            }
+        }
+    }
+]

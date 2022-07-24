@@ -1,0 +1,197 @@
+[
+    {
+        "homePage":{
+            "slider": [
+                {
+                    "img": "/assets/images/slider/1.jpg",
+                    "title": "high quality",
+                    "descr": "Our biggest advantage is 100% satisfaction of tourists with our service."
+                },
+                {
+                    "img": "/assets/images/slider/2.png",
+                    "title": "Travel with us",
+                    "descr": "The best quality, affordable price all with us."
+                },
+                {
+                    "img": "/assets/images/slider/3.png",
+                    "title": "Discover new worlds",
+                    "descr": "Discover interesting places with us end enjoy the scenery you have never seen before"
+                }
+            ],
+            "section": {
+                "descr": "Boysun Ko'xinur Travel is a team offering the highest quality tourism services. We offer you the opportunity to discover a new world for yourself in Uzbekistan and offer the highest quality at affordable price.",
+                "statis": [
+                    {"content": "320 Transports"},
+                    {"content": "93 Tourism areas"},
+                    {"content": "932 Customers"},
+                    {"num": 3, "content": "329 Hotels"},
+                    {"num": 4, "content": "32 Services"}
+                ],
+                "video": {
+                    "src": "/assets/videos/about.mp4",
+                    "err": "Sorry, your browser does not support this file. Please use a different browser."
+                },
+                "places": {
+                    "title": "Popular places",
+                    "descr": "Discover the most famous places of Uzbekistan with us"
+                },
+                "hotels": {
+                    "title": "The best hotels",
+                    "descr": "We offer to you the best hotels with the highest quality."
+                }
+            },
+            "btns": {
+                "load": "Load more",
+                "more": "More",
+                "learn": "More"
+            }
+        },
+        "navbar": {
+            "logoSrc": "/assets/images/logo.png",
+            "links": {
+                "home": "Home",
+                "about": "About",
+                "services": "Services",
+                "contact": "Contact"
+                },
+                "reg": {
+                    "login": "Login"
+                }
+        },
+        "footer": {
+            "content": {
+                "title": "Boysun Ko'xinur<br/> Travel",
+                "descr": "Boysun Ko'xinur Travel is the best quality travel agency in Uzbekistan."
+            },
+            "links": {
+                "title": "Links",
+                "home": "Home",
+                "about": "About",
+                "services": "Services",
+                "contact": "Contact"
+            },
+            "contact": {
+                "title": "Contact",
+                "location": {
+                    "key": "Location:",
+                    "value": "Via Venti Settembre, Ireland"
+                },
+                "phone": {
+                    "key": "Telephone:",
+                    "value": "+31 555 777 83"
+                },
+                "email": {
+                    "key": "e-mail:",
+                    "value": "kamperen@qode.com"
+                }
+            },
+            "network": {
+                "title": "Social networks",
+                "facebook": {
+                    "link": "https://www.facebook.com",
+                    "content": "Facebook"
+                },
+                "instagram": {
+                    "link": "https://www.instagram.com",
+                    "content": "Instagram"
+                },
+                "telegram": {
+                    "link": "https://www.telegram.com/",
+                    "content": "Telegram"
+                }
+            },
+            "privacy": {
+                "leftOne":"Terms of use",
+                "leftTwo":"Privacy Policy",
+                "right":"© 2020 Boysun Ko'xinur Travel, all rights are reserved"
+            }
+        },
+        "servicesPage": {
+            "titleHome": "Our services",
+            "titleSection": "Top services",
+            "img": "/assets/images/slider/2.png",
+            "descr": "Regardless of the price of our services, we guarantee high quality for all our services and that's why we stand out from the rest",
+            "cost": "The list of expenses",
+            "amount": "Price" 
+        },
+        "offer": {
+            "slider": [
+                {"img": "/assets/images/slider/1.jpg"},
+                {"img": "/assets/images/slider/2.png"},
+                {"img": "/assets/images/slider/3.png"},
+                {"img": "/assets/images/slider/2.png"},
+                {"img": "/assets/images/slider/1.jpg"},
+                {"img": "/assets/images/slider/3.png"}
+            ]
+        },
+        "about": {
+            "header": {
+                "img": "/assets/images/slider/2.png",
+                "title": "Biz Haqimizda"
+            },
+            "section": {
+                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "prising": [
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    }
+                ],
+                "discover": {
+                    "img": "/assets/images/about-img.jpg",
+                    "title": "Discover an Immersive Camping Experience",
+                    "descr": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer.",
+                    "elem": [
+                        {"text": "Books"},
+                        {"text": "Wi-Fi reception on the whole campground"},
+                        {"text": "Recycling"},
+                        {"text": "Possibility to park a boat"},
+                        {"text": "Barbecue area"},
+                        {"text": "Playground for the little ones"},
+                        {"text": "Recycling"}
+                    ]
+                }
+            }
+        },
+        "contact": {
+            "header": {
+                "img": "/assets/images/slider/2.png",
+                "title": "Biz bilan Aloqa"
+            },
+            "section": {
+                "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
+                "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
+                "phoneOne": "Reception phone: +64 (0)50 745 6473",
+                "phoneTwo": "Reservations: +64 (0)50 745 6473",
+                "telegram": "Lodge: +64 (0)50 745 6473",
+                "email": "Email: info@camp.com",
+                "formTitle": "Xabar Yuboring",
+                "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",
+                "formTextValue": "Xabar *",
+                "formNameValue": "Ismingiz *",
+                "formEmailValue": "Elekton Pochtangiz",
+                "formBtn": "Yuborish"
+            }
+        }
+    }
+]

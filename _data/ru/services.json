@@ -1,90 +1,90 @@
 [
     {
-        "title": "Termiz => Buxoro => Samarqand => Termiz",
+        "title": "Термез => Бухара => Самарканд => Термез",
         "img": "/assets/images/demos/1.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Стоимость транспортной услуги",
                 "amount": "260"
             },
             {
-                "content": "2 kecha mehmonxona xarajatlari",
+                "content": "Затраты на отель за два дня",
                 "amount": "300"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Затраты на еду",
                 "amount": "200"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Услуги гида и комиссионные затраты",
                 "amount": "90"
             }
         ],
         "isLeft": true
     },
     {
-        "title": "Termiz => Samarqand => Termiz",
+        "title": "Термез => Самарканд => Термез",
         "img": "/assets/images/demos/2.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Стоимость транспортной услуги",
                 "amount": "175"
             },
             {
-                "content": "1 kecha mehmonxona xarajatlari",
+                "content": "Затраты на отель за сутки",
                 "amount": "150"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Затраты на еду",
                 "amount": "100"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Услуги гида и комиссионные затраты",
                 "amount": "90"
             }
         ]
     },
     {
-        "title": "Termiz => Buxoro => Termiz",
+        "title": "Термез => Бухара => Термез",
         "img": "/assets/images/demos/3.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Стоимость транспортной услуги",
                 "amount": "180"
             },
             {
-                "content": "1 kecha mehmonxona xarajatlari",
+                "content": "Затраты на отель за сутки",
                 "amount": "150"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Затраты на еду",
                 "amount": "100"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Услуги гида и комиссионные затраты",
                 "amount": "90"
             }
         ],
         "isLeft": true
     },
     {
-        "title": "Termiz => Xiva => Termiz",
+        "title": "Tермез => Хива => Tермез",
         "img": "/assets/images/demos/4.jpg",
         "cost":[ 
             {
-                "content": "Transport xizmat xarajati",
+                "content": "Стоимость транспортной услуги",
                 "amount": "350"
             },
             {
-                "content": "2 kecha mehmonxona xarajatlari",
+                "content": "Затраты на отель за два дня",
                 "amount": "300"
             },
             {
-                "content": "Ovqatlanish Xarajatlari",
+                "content": "Затраты на еду",
                 "amount": "200"
             },
             {
-                "content": "Git xitmati va Komission yig'imlar",
+                "content": "Услуги гида и комиссионные затраты",
                 "amount": "100"
             }
         ]

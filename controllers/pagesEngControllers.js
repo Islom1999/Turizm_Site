@@ -30,6 +30,7 @@ const getHomePage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langENG: 'eng',
+            lang: 'eng',
             HomeDB: PagesDB[0].homePage,
 
             PlaceDefaultDB: PlaceDB.slice(0, 4),
@@ -57,7 +58,7 @@ const getAboutPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langENG: 'eng',
-
+            lang: 'eng',
             AboutDB: PagesDB[0].about,
             statisDB: PagesDB[0].homePage.section.statis,
             videoDB: PagesDB[0].homePage.section.video
@@ -73,8 +74,11 @@ const getContactPage = async(req,res) => {
             url: process.env.URL + '/eng',
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
-            langRU: 'ru',
-            PagesDB: PagesDB[0].contact
+            langENG: 'eng',
+            lang: 'eng',
+            PagesDB: PagesDB[0].contact,
+
+            passERR: req.flash('PassErr')
         })
     }catch(err){
         console.log(err)
@@ -103,6 +107,7 @@ const getServicesPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langENG: 'eng',
+            lang: 'eng',
             ServicesPage: PagesDB[0].servicesPage,
             ServicesDB
         })
@@ -138,6 +143,7 @@ const getOfferPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langENG: 'eng',
+            lang: 'eng',
             ServicesDB: ServicesDB[0],
             slider: PagesDB[0].offer.slider
         })

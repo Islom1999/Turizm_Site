@@ -125,50 +125,49 @@
             ]
         },
         "about": {
-            "header": {
+             "header": {
                 "img": "/assets/images/slider/2.png",
-                "title": "Biz Haqimizda"
+                "title": "About us"
             },
             "section": {
-                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "descr": "Boysun Ko'xinur Travel is a team offering the highest quality tourism services. We offer you the opportunity to discover a new world for yourself in Uzbekistan and offer the highest quality at affordable prices.",
                 "prising": [
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Hotels",
+                        "descr": "Poor quality services always hinder the enjoyment of travel. But we offer the best quality hotels for you to enjoy the pleasure of travel."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Restaurants",
+                        "descr": "Spend unforgettable moments of your life with the best quality restaurants in Uzbekistan."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Wonderful nature",
+                        "descr": "A great choice to enjoy is nature travel, because relaxing in nature can improve your health and reduce stress, so enjoy the nature of Uzbekistan with us."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Meals",
+                        "descr": "We provide the highest quality services for you to enjoy the national dishes of Uzbekistan."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Transports",
+                        "descr": "Considering that Uzbekistan is a huge country, it will take a long time to enjoy it all, but we will serve you with our turbo-speed vehicles."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Great impressions",
+                        "descr": "Share with us your unforgettable experiences,choose our service to enjoy amazing animals, sights and food."
                     }
                 ],
                 "discover": {
                     "img": "/assets/images/about-img.jpg",
-                    "title": "Discover an Immersive Camping Experience",
-                    "descr": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer.",
+                    "title": "Make a wonderful impression together",
+                    "descr": "Together with Boysun Ko'xinur Travel agency, experience emotions you have not yet experienced, foods you have not eaten, and beautiful scenery you can not imagine",
                     "elem": [
-                        {"text": "Books"},
-                        {"text": "Wi-Fi reception on the whole campground"},
-                        {"text": "Recycling"},
-                        {"text": "Possibility to park a boat"},
-                        {"text": "Barbecue area"},
-                        {"text": "Playground for the little ones"},
-                        {"text": "Recycling"}
+                        {"text": "Quality hotels"},
+                        {"text": "Fast transport"},
+                        {"text": "Delecious meals"},
+                        {"text": "Entertaining scenes"},
+                        {"text": "Delightful images"},
+                        {"text": "High quality"}
                     ]
                 }
             }
@@ -176,21 +175,21 @@
         "contact": {
             "header": {
                 "img": "/assets/images/slider/2.png",
-                "title": "Biz bilan Aloqa"
+                "title": "Contact Us"
             },
             "section": {
-                "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
-                "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
-                "phoneOne": "Reception phone: +64 (0)50 745 6473",
-                "phoneTwo": "Reservations: +64 (0)50 745 6473",
-                "telegram": "Lodge: +64 (0)50 745 6473",
+                "inforTitle": "Email Info@camp.com ",
+                "inforDescr": "Do you have a question? Get in touch now",
+                "phoneOne": "Office number: +64 (0)50 745 6473",
+                "phoneTwo": "Mobile number: +64 (0)50 745 6473",
+                "telegram": "Service number: +64 (0)50 745 6473",
                 "email": "Email: info@camp.com",
-                "formTitle": "Xabar Yuboring",
-                "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",
-                "formTextValue": "Xabar *",
-                "formNameValue": "Ismingiz *",
-                "formEmailValue": "Elekton Pochtangiz",
-                "formBtn": "Yuborish"
+                "formTitle": "Send a message",
+                "formDescr": "Having trouble connecting? Leave a message directly",
+                "formTextValue": "Message *",
+                "formNameValue": "Your name *",
+                "formEmailValue": "Your email",
+                "formBtn": "Send"
             }
         }
     }

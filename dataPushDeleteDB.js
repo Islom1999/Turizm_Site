@@ -5,6 +5,9 @@ const { v4 } = require('uuid')
 
 dotenv.config()
 
+// User Page DATA 
+const UserPage = require('./model/UserPage')
+
 // UZBEK DATA MODEL
 const PagesUZ = require('./model/uz/PagesModel')
 const PlaceUZ = require('./model/uz/PlaceModel')
@@ -26,6 +29,9 @@ const ServicesRU = require('./model/ru/ServicesModel')
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
 })
+
+// User Page DB Json
+const UserPageDB = JSON.parse(fs.readFileSync(`${__dirname}/_data/userPage.json`), 'utf-8')
 
 // UZ DATA JSON 
 const PagesDB_UZ = JSON.parse(fs.readFileSync(`${__dirname}/_data/uz/pages.json`), 'utf-8')
@@ -69,6 +75,8 @@ HotelDB_UZ .forEach( (elem, index) => {
 const importData = async() => {
     try{
 
+        await UserPage.create(UserPageDB)
+
         // UZ DATA ADD MONGO DB
         await PagesUZ.create(PagesDB_UZ)
         await PlaceUZ.create(PlaceDB_UZ)
@@ -96,6 +104,8 @@ const importData = async() => {
 
 const deleteData = async () => {
     try{
+
+        await UserPage.deleteMany()
 
         // UZ DATA REMOVE
         await PagesUZ.deleteMany()

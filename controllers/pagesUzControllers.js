@@ -30,6 +30,7 @@ const getHomePage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langUZ: 'uz',
+            lang: 'uz',
             HomeDB: PagesDB[0].homePage,
 
             PlaceDefaultDB: PlaceDB.slice(0, 4),
@@ -57,7 +58,7 @@ const getAboutPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langUZ: 'uz',
-
+            lang: 'uz',
             AboutDB: PagesDB[0].about,
             statisDB: PagesDB[0].homePage.section.statis,
             videoDB: PagesDB[0].homePage.section.video
@@ -75,6 +76,7 @@ const getContactPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langUZ: 'uz',
+            lang: 'uz',
             PagesDB: PagesDB[0].contact,
 
         })
@@ -105,6 +107,7 @@ const getServicesPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langUZ: 'uz',
+            lang: 'uz',
             ServicesPage: PagesDB[0].servicesPage,
             ServicesDB
         })
@@ -136,6 +139,7 @@ const getOfferPage = async(req,res) => {
             Navbar: PagesDB[0].navbar,
             Footer: PagesDB[0].footer,
             langUZ: 'uz',
+            lang: 'uz',
             ServicesDB: ServicesDB[0],
             slider: PagesDB[0].offer.slider
         })

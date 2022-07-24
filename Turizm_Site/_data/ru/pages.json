@@ -1,0 +1,197 @@
+[
+    {
+        "homePage":{
+            "slider": [
+                {
+                    "img": "/assets/images/slider/1.jpg",
+                    "title": "Yuqori Sifat",
+                    "descr": "Bizning eng katta ustunligimiz, Sayohlarning Xizmatimizdan 100%, qoniqishidir."
+                },
+                {
+                    "img": "/assets/images/slider/2.png",
+                    "title": "Biz bilan sayohat qiling",
+                    "descr": "Eng yaxshi sifat hamyonbop narx barchasi bizda."
+                },
+                {
+                    "img": "/assets/images/slider/3.png",
+                    "title": "Yangi dunyolarni kashf qiling",
+                    "descr": "Biz bilan birgalikda qiziqarli joylarni kasf qiling va hech qachon ko'rmagan manzaralaringizdan rohatlaning"
+                }
+            ],
+            "section": {
+                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "statis": [
+                    {"content": "320 Mashinalar"},
+                    {"content": "93 Sayohlik hududlar"},
+                    {"content": "932 Mijozlar"},
+                    {"num": 3, "content": "329 Mehmonxonalar"},
+                    {"num": 4, "content": "32 Xizmatlar"}
+                ],
+                "video": {
+                    "src": "/assets/videos/about.mp4",
+                    "err": "Kechirasiz sizning brauzeringiz ushbu fileni qo'llab quvvatlamaydi. Iltimos boshqa brauzerdan foydalaning."
+                },
+                "places": {
+                    "title": "Mashhur Joylar",
+                    "descr": "Biz bilan O'zbekistonning eng mashhur joylarini kashf eting"
+                },
+                "hotels": {
+                    "title": "Eng Yaxshi Mehmonxonalar",
+                    "descr": "Biz eng yuqori sifat bilan eng sifatli mehmonxonalarni sizga taklif qilamiz."
+                }
+            },
+            "btns": {
+                "load": "Ko'proq Yuklash",
+                "more": "Ko'proq",
+                "learn": "Batafsil"
+            }
+        },
+        "navbar": {
+            "logoSrc": "/assets/images/logo.png",
+            "links": {
+                "home": "Bosh sahifa",
+                "about": "Biz Haqimizda",
+                "services": "Xizmatlar",
+                "contact": "Aloqa"
+                },
+                "reg": {
+                    "login": "Kirish"
+                }
+        },
+        "footer": {
+            "content": {
+                "title": "Boysun Ko'xinur<br/> Travel",
+                "descr": "Boysun Ko'xinur Travel O'zbekiston bo'yicha eng sifatli sayohlik agentligi."
+            },
+            "links": {
+                "title": "Havolalar",
+                "home": "Bosh sahifa",
+                "about": "Biz Haqimizda",
+                "services": "Xizmatlar",
+                "contact": "Aloqa"
+            },
+            "contact": {
+                "title": "Aloqa",
+                "location": {
+                    "key": "Manzil:",
+                    "value": "Via Venti Settembre, Ireland"
+                },
+                "phone": {
+                    "key": "Telefon:",
+                    "value": "+31 555 777 83"
+                },
+                "email": {
+                    "key": "Elektron Pochta:",
+                    "value": "kamperen@qode.com"
+                }
+            },
+            "network": {
+                "title": "Ijtimoiy Tarmoqlar",
+                "facebook": {
+                    "link": "https://www.facebook.com",
+                    "content": "Facebook"
+                },
+                "instagram": {
+                    "link": "https://www.instagram.com",
+                    "content": "Instagram"
+                },
+                "telegram": {
+                    "link": "https://www.telegram.com/",
+                    "content": "Telegram"
+                }
+            },
+            "privacy": {
+                "leftOne":"Foydalanish shartlari",
+                "leftTwo":"Maxfiylik siyosati",
+                "right":"© 2020 Boysun Ko'xinur Travel, Barcha huquqlar himoyalangan"
+            }
+        },
+        "servicesPage": {
+            "titleHome": "Bizning Xizmatlar",
+            "titleSection": "Top Xizmatlar",
+            "img": "/assets/images/slider/2.png",
+            "descr": "Xizmatlarimizning narxidan qatiy nazar biz barcha ko'rsatilgan xizmatlarimiz uchun yuqori sifatni kafotlatlaymiz va shuning uchun boshqalardan ajralib turamiz",
+            "cost": "Xarajatlar ro'yhati",
+            "amount": "narxi" 
+        },
+        "offer": {
+            "slider": [
+                {"img": "/assets/images/slider/1.jpg"},
+                {"img": "/assets/images/slider/2.png"},
+                {"img": "/assets/images/slider/3.png"},
+                {"img": "/assets/images/slider/2.png"},
+                {"img": "/assets/images/slider/1.jpg"},
+                {"img": "/assets/images/slider/3.png"}
+            ]
+        },
+        "about": {
+            "header": {
+                "img": "/assets/images/slider/2.png",
+                "title": "Biz Haqimizda"
+            },
+            "section": {
+                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "prising": [
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    },
+                    {
+                        "title": "Parking in the camp",
+                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                    }
+                ],
+                "discover": {
+                    "img": "/assets/images/about-img.jpg",
+                    "title": "Discover an Immersive Camping Experience",
+                    "descr": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer.",
+                    "elem": [
+                        {"text": "Books"},
+                        {"text": "Wi-Fi reception on the whole campground"},
+                        {"text": "Recycling"},
+                        {"text": "Possibility to park a boat"},
+                        {"text": "Barbecue area"},
+                        {"text": "Playground for the little ones"},
+                        {"text": "Recycling"}
+                    ]
+                }
+            }
+        },
+        "contact": {
+            "header": {
+                "img": "/assets/images/slider/2.png",
+                "title": "Biz bilan Aloqa"
+            },
+            "section": {
+                "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
+                "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
+                "phoneOne": "Reception phone: +64 (0)50 745 6473",
+                "phoneTwo": "Reservations: +64 (0)50 745 6473",
+                "telegram": "Lodge: +64 (0)50 745 6473",
+                "email": "Email: info@camp.com",
+                "formTitle": "Xabar Yuboring",
+                "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",
+                "formTextValue": "Xabar *",
+                "formNameValue": "Ismingiz *",
+                "formEmailValue": "Elekton Pochtangiz",
+                "formBtn": "Yuborish"
+            }
+        }
+    }
+]

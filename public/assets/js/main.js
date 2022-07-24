@@ -36,14 +36,13 @@ const handleAuthModal = () => {
     modalOverlay.style.pointerEvents = pointerEvents;
     document.body.style.overflowY = !opacity ? "auto" : "hidden";
   }
-  
+
   for (btn of modalOpener) {
     btn.addEventListener("click", () => {
-      console.log("clicked")
       toggleData(1, "all");
     });
   }
-  
+
   modalCloser.addEventListener("click", () => {
     toggleData(0, "none");
   });
@@ -54,39 +53,64 @@ const handleAuthModal = () => {
 }
 
 const handleLanguage = () => {
-  if(window.location.pathname.indexOf('/') !== 'admin'){
-    const lang = localStorage.getItem("lang");
-    const changeLocaltionByLang = lang => {
-      const path = window.location.pathname.slice(1)
-      const newPath = path.slice(path.indexOf('/'))
-      console.log(newPath)
-  
-      localStorage.setItem("lang", lang);
-      window.location.pathname = `/${lang + newPath}`;
-    }
- 
-    if (window.location.pathname === "/") {
-      window.location.pathname = `/${lang || "eng"}`;
-    }
-  
-    const LangToEngBtns = $All(".lang-to-eng");
-    const LangToUzBtns = $All(".lang-to-uz");
-    const LangToRuBtns = $All(".lang-to-ru");
-  
-    for (let langToEngBtn of LangToEngBtns) {
-      langToEngBtn.addEventListener("click", () => changeLocaltionByLang("eng"));
-    }
-  
-    for (let langToRuBtn of LangToRuBtns) {
-      langToRuBtn.addEventListener("click", () => changeLocaltionByLang("ru"));
-    }
-  
-    for (let langToUzBtn of LangToUzBtns) {
-      langToUzBtn.addEventListener("click", () => changeLocaltionByLang("uz"));
-    }
-    
+  const lang = localStorage.getItem("lang");
+  const changeLocaltionByLang = lang => {
+    localStorage.setItem("lang", lang);
+    window.location.pathname = `/${lang}`;
   }
-  console.log('salom')
+
+  if (window.location.pathname === "/") {
+    window.location.pathname = `/${lang || "eng"}`;
+  }
+
+  const LangToEngBtns = $All(".lang-to-eng");
+  const LangToUzBtns = $All(".lang-to-uz");
+  const LangToRuBtns = $All(".lang-to-ru");
+
+  for (let langToEngBtn of LangToEngBtns) {
+    langToEngBtn.addEventListener("click", () => changeLocaltionByLang("eng"));
+  }
+
+  for (let langToRuBtn of LangToRuBtns) {
+    langToRuBtn.addEventListener("click", () => changeLocaltionByLang("ru"));
+  }
+
+  for (let langToUzBtn of LangToUzBtns) {
+    langToUzBtn.addEventListener("click", () => changeLocaltionByLang("uz"));
+  }
+}
+
+const handleChangeForm = () => {
+  const registerBtn = $("#show-register-btn");
+  const loginBtn = $("#show-login-btn");
+  const registerForm = $("#register-form")
+  const loginForm = $("#login-form");
+  let showLoginForm = 1;
+
+  const changeAuthPage = () => {
+    if (showLoginForm) {
+      loginForm.classList.remove("hide-form");
+      registerForm.classList.add("hide-form");
+      registerBtn.classList.remove("border-blue");
+      loginBtn.classList.add("border-blue");
+    } else {
+      loginForm.classList.add("hide-form");
+      registerForm.classList.remove("hide-form");
+      registerBtn.classList.add("border-blue");
+      loginBtn.classList.remove("border-blue");
+    }
+  }
+
+  registerBtn.addEventListener("click", () => {
+    console.log("a")
+    showLoginForm = 0;
+    changeAuthPage();
+  });
+
+  loginBtn.addEventListener("click", () => {
+    showLoginForm = 1;
+    changeAuthPage();
+  })
 }
 
 const navbar = $("#navbar")
@@ -103,7 +127,9 @@ window.addEventListener("scroll", () => {
 window.addEventListener("DOMContentLoaded", () => {
   handleNavbarOpenMenu();
   handleAuthModal();
-  handleLanguage()
+  handleLanguage();
+  handleChangeForm();
+
   tailwind.config = {
     theme: {
       extend: {

@@ -133,42 +133,41 @@
                 "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
                 "prising": [
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Mehmonxonalar",
+                        "descr": "Sifatsiz xizmatlar sayohat lazzatidan bahra olishga doimo xalaqt beradi. Ammo biz sayohat lazzatidan barmant bo'lishingiz uchun eng sifatli mehmonxonalarni taklif etamiz."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Restaranlar",
+                        "descr": "O'zbekistondagi eng sifatli restarantlar bilan hayotingizning unitilmas damlarini o'tkazing"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Ajoyib Tabiat",
+                        "descr": "Tabiat sayohatdan bahra olish uchun ajoyib tanlov, sababi tabiat qo'ynidagi dam olish salomatligingizni yaxshilash va stress hissini pasaytirishga yordam beradi, shuning uchun biz bilan O'zbekiston tabiatidan bahra oling"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Taomlar",
+                        "descr": "O'zbekistonning milliy toamlaridan bahramat bo'lishingiz uchun biz eng yuqori sifatli xizmatlarni ko'rsatamaiz"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Transportlar",
+                        "descr": "O'zbekiston juda katta mamlakat ekanligini hisobga olgan holda, barchasidan lazzatlanish juda ko'p vaqt talab qiladi, ammo biz sizga turbo tezligida harakatlanuvchi transportlarimiz orqali xizmat ko'rsatamiz"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Ajoyib Tasurotlar",
+                        "descr": "Biz bilan hali kechirmagan tasurotlaringizni birga o'tkazing, ajoiyb jonivorlar, manzaralar va toamlardan bahra olish uchun bizning xizmatni tanlang"
                     }
                 ],
                 "discover": {
                     "img": "/assets/images/about-img.jpg",
-                    "title": "Discover an Immersive Camping Experience",
-                    "descr": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer.",
+                    "title": "Ajoyib Tasurotlarni Birga O'tkazing",
+                    "descr": "Boysun Ko'xinur Travel sayohlik agentligi bilan birga hali his qilib ulgurmagan hissiyotlaringizni, tanavul qilmagan taomlaringizni va tassavur qilib bo'lmaydigan chiroyli manzaralaringizni birga boshdan o'tkazing",
                     "elem": [
-                        {"text": "Books"},
-                        {"text": "Wi-Fi reception on the whole campground"},
-                        {"text": "Recycling"},
-                        {"text": "Possibility to park a boat"},
-                        {"text": "Barbecue area"},
-                        {"text": "Playground for the little ones"},
-                        {"text": "Recycling"}
+                        {"text": "Sifatli Mehmonxonalar"},
+                        {"text": "Tezkor transport"},
+                        {"text": "Mazali Taomlar"},
+                        {"text": "Ko'ngil ochar manzaralar"},
+                        {"text": "Zavqli tasurotlar"},
+                        {"text": "Yuqori sifat"}
                     ]
                 }
             }
@@ -181,9 +180,9 @@
             "section": {
                 "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
                 "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
-                "phoneOne": "Reception phone: +64 (0)50 745 6473",
-                "phoneTwo": "Reservations: +64 (0)50 745 6473",
-                "telegram": "Lodge: +64 (0)50 745 6473",
+                "phoneOne": "Idora raqami: +64 (0)50 745 6473",
+                "phoneTwo": "Mobile raqami: +64 (0)50 745 6473",
+                "telegram": "Servis raqami: +64 (0)50 745 6473",
                 "email": "Email: info@camp.com",
                 "formTitle": "Xabar Yuboring",
                 "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",

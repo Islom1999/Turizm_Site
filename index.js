@@ -6,6 +6,9 @@ const connectDB = require('./config/configDb')
 
 const session = require('express-session')
 const MongoStore = require('connect-mongodb-session')(session)
+// const flash = require('connect-flash')
+// const helmet = require("helmet")
+// const compression = require('compression')
 
 const app = express()
 
@@ -29,7 +32,9 @@ app.use(session({
     saveUninitialized: false,
     store
 }))
-
+// app.use(flash()) 
+// app.use(helmet())
+// app.use(compression())
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -40,6 +45,8 @@ app.set('views', './views');
 app.get('/', (req, res) => {
     res.redirect('/eng/')
 })
+
+app.use('/eng/user', require('./routes/userEngRoutes'))
 
 app.use('/uz', require('./routes/pagesUz'))
 app.use('/eng', require('./routes/pagesEng'))

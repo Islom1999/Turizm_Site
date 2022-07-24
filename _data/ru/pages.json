@@ -4,89 +4,89 @@
             "slider": [
                 {
                     "img": "/assets/images/slider/1.jpg",
-                    "title": "Yuqori Sifat",
-                    "descr": "Bizning eng katta ustunligimiz, Sayohlarning Xizmatimizdan 100%, qoniqishidir."
+                    "title": "Высокое качество",
+                    "descr": "Наше основное превосходство, удовлетворение поездкой на все 100% ."
                 },
                 {
                     "img": "/assets/images/slider/2.png",
-                    "title": "Biz bilan sayohat qiling",
-                    "descr": "Eng yaxshi sifat hamyonbop narx barchasi bizda."
+                    "title": "Путешествуйте с нами",
+                    "descr": "Самое лучшее качество и хорошая цена только у нас."
                 },
                 {
                     "img": "/assets/images/slider/3.png",
-                    "title": "Yangi dunyolarni kashf qiling",
-                    "descr": "Biz bilan birgalikda qiziqarli joylarni kasf qiling va hech qachon ko'rmagan manzaralaringizdan rohatlaning"
+                    "title": "Открывайте для себя новые локации",
+                    "descr": "Исследуйте с нами интересные места и получайте удовольствие от путешествия"
                 }
             ],
             "section": {
-                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "descr": "\"Boysun Ko'xinur Travel\" команда представляющая самые качественные услуги.  Мы предоставляем вам высокое качество и выгодные цены для открытия новых локаций и путешествий в Узбекистане для вас.",
                 "statis": [
-                    {"content": "320 Mashinalar"},
-                    {"content": "93 Sayohlik hududlar"},
-                    {"content": "932 Mijozlar"},
-                    {"num": 3, "content": "329 Mehmonxonalar"},
-                    {"num": 4, "content": "32 Xizmatlar"}
+                    {"content": "320 Maшин"},
+                    {"content": "93 Туристических локаций"},
+                    {"content": "932 услуги предоставлено для туристов"},
+                    {"num": 3, "content": "329 Отелей"},
+                    {"num": 4, "content": "32 Услуги"}
                 ],
                 "video": {
                     "src": "/assets/videos/about.mp4",
-                    "err": "Kechirasiz sizning brauzeringiz ushbu fileni qo'llab quvvatlamaydi. Iltimos boshqa brauzerdan foydalaning."
+                    "err": "Извините, ваш браузер не поддерживает данный файл.Пожалуйста попробуйте открыть в новом браузере."
                 },
                 "places": {
-                    "title": "Mashhur Joylar",
-                    "descr": "Biz bilan O'zbekistonning eng mashhur joylarini kashf eting"
+                    "title": "Известные места",
+                    "descr": "Исследуйте с нами новые локации Узбекистана"
                 },
                 "hotels": {
-                    "title": "Eng Yaxshi Mehmonxonalar",
-                    "descr": "Biz eng yuqori sifat bilan eng sifatli mehmonxonalarni sizga taklif qilamiz."
+                    "title": "Самые лучшие отели",
+                    "descr": "Мы предлагаем вам отели с самым высоким качеством обслуживания и сервисом."
                 }
             },
             "btns": {
-                "load": "Ko'proq Yuklash",
-                "more": "Ko'proq",
-                "learn": "Batafsil"
+                "load": "Загрузить больше",
+                "more": "Больше",
+                "learn": "Узнать больше"
             }
         },
         "navbar": {
             "logoSrc": "/assets/images/logo.png",
             "links": {
-                "home": "Bosh sahifa",
-                "about": "Biz Haqimizda",
-                "services": "Xizmatlar",
-                "contact": "Aloqa"
+                "home": "Главная",
+                "about": "О нас",
+                "services": "Услуги",
+                "contact": "Связь"
                 },
                 "reg": {
-                    "login": "Kirish"
+                    "login": "Вход"
                 }
         },
         "footer": {
             "content": {
                 "title": "Boysun Ko'xinur<br/> Travel",
-                "descr": "Boysun Ko'xinur Travel O'zbekiston bo'yicha eng sifatli sayohlik agentligi."
+                "descr": "Boysun Ko'xinur Travel самое качественное туристическое агенство Узбекистана."
             },
             "links": {
-                "title": "Havolalar",
-                "home": "Bosh sahifa",
-                "about": "Biz Haqimizda",
-                "services": "Xizmatlar",
-                "contact": "Aloqa"
+                "title": "Ссылки",
+                "home": "Главная",
+                "about": "О нас",
+                "services": "Услуги",
+                "contact": "Связь"
             },
             "contact": {
-                "title": "Aloqa",
+                "title": "Связь",
                 "location": {
-                    "key": "Manzil:",
+                    "key": "Адрес:",
                     "value": "Via Venti Settembre, Ireland"
                 },
                 "phone": {
-                    "key": "Telefon:",
+                    "key": "Номер телефона:",
                     "value": "+31 555 777 83"
                 },
                 "email": {
-                    "key": "Elektron Pochta:",
+                    "key": "Электронная почта:",
                     "value": "kamperen@qode.com"
                 }
             },
             "network": {
-                "title": "Ijtimoiy Tarmoqlar",
+                "title": "Социальные сети",
                 "facebook": {
                     "link": "https://www.facebook.com",
                     "content": "Facebook"
@@ -101,18 +101,18 @@
                 }
             },
             "privacy": {
-                "leftOne":"Foydalanish shartlari",
-                "leftTwo":"Maxfiylik siyosati",
-                "right":"© 2020 Boysun Ko'xinur Travel, Barcha huquqlar himoyalangan"
+                "leftOne":"Пользовательское соглашение",
+                "leftTwo":"Конфиденциальность",
+                "right":"© 2020 Boysun Ko'xinur Travel, все права защищены"
             }
         },
         "servicesPage": {
-            "titleHome": "Bizning Xizmatlar",
-            "titleSection": "Top Xizmatlar",
+            "titleHome": "Наши услуги",
+            "titleSection": "Топ услуг",
             "img": "/assets/images/slider/2.png",
-            "descr": "Xizmatlarimizning narxidan qatiy nazar biz barcha ko'rsatilgan xizmatlarimiz uchun yuqori sifatni kafotlatlaymiz va shuning uchun boshqalardan ajralib turamiz",
-            "cost": "Xarajatlar ro'yhati",
-            "amount": "narxi" 
+            "descr": "Мы отличаемся от других агенств тем, что за наши услуги мы обеспечиваем вам качество.",
+            "cost": "Список затрат",
+            "amount": "цена" 
         },
         "offer": {
             "slider": [
@@ -127,48 +127,47 @@
         "about": {
             "header": {
                 "img": "/assets/images/slider/2.png",
-                "title": "Biz Haqimizda"
+                "title": "О нас"
             },
             "section": {
-                "descr": "Boysun Ko'xinur Travel eng yuqori sifatli turizm xizmatlarini taklif qiluvchi jamoa. Biz sizga O'zbekistonda o'ziningiz uchun yangi dunyoni kashf qilishga va bu uchun eng yuqori sifatga ega hamyonbop narxalrni ham taqdim etamiz.",
+                "descr": "\"Boysun Ko'xinur Travel\" команда представляющая самые качественные услуги.  Мы предоставляем вам высокое качество и выгодные цены для открытия новых локаций и путешествий в Узбекистане для вас.",
                 "prising": [
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Отели",
+                        "descr": "Некачественные услуги оказывают плохое влияние на путешестве. Мы предлагаем вам самые качественные гостиницы, чтобы предотвратить это."
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Рестораны",
+                        "descr": "Проводите незабываемое время с самыми лучшими ресторанами Узбекистана"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Прелестная природа",
+                        "descr": "Самочувствие человека в значительной степени зависит от состояния окружающей среды и природы в целом, чтобы снизить уровень стресса и стать более бодрым и здоровым попутешествуйте по местам природы Узбекистана"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Блюда",
+                        "descr": "Наслаждайтесь особенностями национальной кухни Узбекистана"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Tранспорт",
+                        "descr": "Считаясь с тем что, Узбекистан довольно таки большая страна - потребуется большое количество времени,чтобы насладиться путешествиями.Во избежание этого мы предлагаем вам высокоскоростной и удобный транспорт для путешествий"
                     },
                     {
-                        "title": "Parking in the camp",
-                        "descr": "Lorem ipsum dolor sit amet, consectetur adip cing elit. Nullam blandit hendrerit faucibus. Su ndisse hendrerit turpisdui, eget ultricies erat."
+                        "title": "Удивительные впечатления",
+                        "descr": "Получите незабываемые впечатления от природы,еды,отдыха и в целом путешествия с нами"
                     }
                 ],
                 "discover": {
                     "img": "/assets/images/about-img.jpg",
-                    "title": "Discover an Immersive Camping Experience",
-                    "descr": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Lorem ipsum dolor sit amet, consectetuer.",
+                    "title": "Получите незабываемые впечатления вместе",
+                    "descr": "Получите бесконечное удовольствие от путешествия,вкуса национальной кухни, красоты природы вместе с Boysun Ko'xinur Travel",
                     "elem": [
-                        {"text": "Books"},
-                        {"text": "Wi-Fi reception on the whole campground"},
-                        {"text": "Recycling"},
-                        {"text": "Possibility to park a boat"},
-                        {"text": "Barbecue area"},
-                        {"text": "Playground for the little ones"},
-                        {"text": "Recycling"}
+                        {"text": "Качественные Отели"},
+                        {"text": "Высокоскоростной транспорт"},
+                        {"text": "Вкусные блюда"},
+                        {"text": "Неимоверная природа"},
+                        {"text": "Незабываемые впечатления"},
+                        {"text": "Высокое качество"}
                     ]
                 }
             }
@@ -176,21 +175,21 @@
         "contact": {
             "header": {
                 "img": "/assets/images/slider/2.png",
-                "title": "Biz bilan Aloqa"
+                "title": "Связь с нами"
             },
             "section": {
-                "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
-                "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
-                "phoneOne": "Reception phone: +64 (0)50 745 6473",
-                "phoneTwo": "Reservations: +64 (0)50 745 6473",
-                "telegram": "Lodge: +64 (0)50 745 6473",
+                "inforTitle": "Info@camp.com свяжитесь с нами по почте",
+                "inforDescr": "Есть вопросы? выходите скорее на связь",
+                "phoneOne": "Телефон организации: +64 (0)50 745 6473",
+                "phoneTwo": "Телефонный номер: +64 (0)50 745 6473",
+                "telegram": "Номер Сервиса: +64 (0)50 745 6473",
                 "email": "Email: info@camp.com",
-                "formTitle": "Xabar Yuboring",
-                "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",
-                "formTextValue": "Xabar *",
-                "formNameValue": "Ismingiz *",
-                "formEmailValue": "Elekton Pochtangiz",
-                "formBtn": "Yuborish"
+                "formTitle": "Отправляйте письма",
+                "formDescr": "Есть проблемы с выходом на связь? Тогда отправляйте сообщение на прямую",
+                "formTextValue": "Сообщение *",
+                "formNameValue": "Ваше Имя *",
+                "formEmailValue": "Ваша электронная почта",
+                "formBtn": "Отправить"
             }
         }
     }
