@@ -78,7 +78,7 @@
                 },
                 "phone": {
                     "key": "Telephone:",
-                    "value": "+31 555 777 83"
+                    "value": "+9989459162"
                 },
                 "email": {
                     "key": "e-mail:",
@@ -180,9 +180,9 @@
             "section": {
                 "inforTitle": "Email Info@camp.com ",
                 "inforDescr": "Do you have a question? Get in touch now",
-                "phoneOne": "Office number: +64 (0)50 745 6473",
-                "phoneTwo": "Mobile number: +64 (0)50 745 6473",
-                "telegram": "Service number: +64 (0)50 745 6473",
+                "phoneOne": "Office number: +9989459162",
+                "phoneTwo": "Mobile number: +9985165522",
+                "telegram": "Service number: +9989459162",
                 "email": "Email: info@camp.com",
                 "formTitle": "Send a message",
                 "formDescr": "Having trouble connecting? Leave a message directly",

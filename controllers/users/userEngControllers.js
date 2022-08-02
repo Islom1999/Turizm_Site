@@ -5,6 +5,7 @@ const Pages = require('../../model/eng/PagesModel')
 const registerUser = async(req,res) => {
     try{
         const { fullName, userName, email, phone, pass, passRepeat} = req.body
+
         if(pass == passRepeat){
             await Users.create({ 
                 fullName,
@@ -13,7 +14,17 @@ const registerUser = async(req,res) => {
                 phone: parseInt(phone),
                 password: pass,
             })
-            return res.redirect(`/user/dashboard`)
+
+            req.session.user = userName
+            req.session.isLogin = true
+            req.session.isAdmin = false
+            req.session.status = 'user'
+            req.session.save()
+
+            return res.status(201).json({
+                message: 'OK',
+                url: `/eng/user/dashboard`
+            })
         }else{
             // if(pass !== passRepeat){
             //     req.flash('PassErr', "siz kiritgan parollar bir xil emas")
@@ -44,10 +55,9 @@ const loginUser = async(req,res) => {
             console.log('salom')
             return res.redirect('/eng/')
         }
-
-
     }catch(err){
         console.log(err)
+        return res.redirect('/eng/')
     }
 }
 
@@ -86,9 +96,30 @@ const outUser = async(req,res) => {
     return res.redirect('/eng/')
 }
 
+const getUsers = async(req, res) => {
+    const UsersDB = await Users.find().lean()
+
+    let users  = []
+
+    UsersDB.forEach(elem => {
+        users.push({
+            userName: elem.userName,
+            email: elem.email,
+        })
+    })
+
+    // res.set('Access-Control-Allow-Origin', 'true')
+
+    res.status(200).json({
+        message: 'OK',
+        data: users
+    })
+}
+
 module.exports = {
     registerUser,
     loginUser,
     getUserPage,
-    outUser
+    outUser,
+    getUsers
 }

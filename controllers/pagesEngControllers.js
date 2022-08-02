@@ -78,7 +78,7 @@ const getContactPage = async(req,res) => {
             lang: 'eng',
             PagesDB: PagesDB[0].contact,
 
-            passERR: req.flash('PassErr')
+            // passERR: req.flash('PassErr')
         })
     }catch(err){
         console.log(err)

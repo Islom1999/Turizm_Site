@@ -4,7 +4,8 @@ const {
     registerUser,
     loginUser,
     getUserPage,
-    outUser
+    outUser,
+    getUsers
 } = require('../controllers/users/userEngControllers')
 
 const router = Router()
@@ -15,5 +16,7 @@ router.post('/register', registerUser)
 router.post('/login', loginUser)
 
 router.post('/logout', outUser)
+
+router.get('/getusers', getUsers) 
 
 module.exports = router

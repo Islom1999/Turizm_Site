@@ -6,6 +6,8 @@ const connectDB = require('./config/configDb')
 
 const session = require('express-session')
 const MongoStore = require('connect-mongodb-session')(session)
+const cors = require('cors')
+
 // const flash = require('connect-flash')
 // const helmet = require("helmet")
 // const compression = require('compression')
@@ -18,6 +20,7 @@ connectDB()
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}));
+app.use(cors())
 
 // initilize to daabase
 

@@ -60,7 +60,7 @@
         },
         "footer": {
             "content": {
-                "title": "Boysun Ko'xinur<br/> Travel",
+                "title": "Boysun Ko'xinur Travel",
                 "descr": "Boysun Ko'xinur Travel O'zbekiston bo'yicha eng sifatli sayohlik agentligi."
             },
             "links": {
@@ -78,7 +78,7 @@
                 },
                 "phone": {
                     "key": "Telefon:",
-                    "value": "+31 555 777 83"
+                    "value": "+9989459162"
                 },
                 "email": {
                     "key": "Elektron Pochta:",
@@ -180,9 +180,9 @@
             "section": {
                 "inforTitle": "Info@camp.com elektron pochtasiga xabar yuboring",
                 "inforDescr": "Savolingiz bormi? hoziroq aloqaga chiqing?",
-                "phoneOne": "Idora raqami: +64 (0)50 745 6473",
-                "phoneTwo": "Mobile raqami: +64 (0)50 745 6473",
-                "telegram": "Servis raqami: +64 (0)50 745 6473",
+                "phoneOne": "Idora raqami: +9989459162",
+                "phoneTwo": "Mobile raqami: +9985165522",
+                "telegram": "Servis raqami: +9989459162",
                 "email": "Email: info@camp.com",
                 "formTitle": "Xabar Yuboring",
                 "formDescr": "Aloqaga chiqishda qandaydir muammo bormi? Unaqada to'g'ridan to'g'ri xabar qoldiring",
