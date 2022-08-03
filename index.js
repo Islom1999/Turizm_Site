@@ -55,6 +55,7 @@ app.use('/uz', require('./routes/pagesUz'))
 app.use('/eng', require('./routes/pagesEng'))
 app.use('/ru', require('./routes/pagesRu'))
  
+app.use('/payment', require('./routes/paymentRoute'))
 app.use('/admin', require('./routes/adminRoutes'))
 
 app.get('/:id', (req, res) => {

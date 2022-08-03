@@ -132,10 +132,10 @@ const deleteData = async () => {
     }
 }
 
-// run function: node seeder -i
+// run function: node dataPushDeleteDB -i
 if(process.argv[2] == '-i'){
     importData()
-}// run function: node seeder -d
+}// run function: node dataPushDeleteDB -d
 else if(process.argv[2] == '-d'){
     deleteData()
 }

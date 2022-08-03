@@ -95,6 +95,7 @@
 </div>
 <!-- ORDER FORM -->
 <div class="md:w-[600px] lg:w-[1000px] mx-auto px-8 py-10 shadow-xl bg-gray-100">
+    <form action="/payment/order/create" method="POST">
     <h1 class="text-center mb-10 text-[30px]">Tezkor buyurtma berish</h1>
     <div class="space-y-8">
     <div class="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-10">
@@ -106,6 +107,7 @@
             id="firstName"
             name="firstName"
             placeholder="Eshmat"
+            required
             />
             <label
             for="firstName"
@@ -119,6 +121,7 @@
             id="lastName"
             name="lastName"
             placeholder="Toshmatov"
+            required
             />
             <label
             for="lastName"
@@ -132,6 +135,7 @@
             class="w-full h-[50px] border-2 p-3"
             id="date"
             name="date"
+            required
         />
         <label
             for="date"
@@ -142,6 +146,7 @@
     <div class="flex flex-col lg:flex-row justify-between space-y-8 lg:space-y-0 lg:space-x-10">
         <div class="w-full lg:w-1/2 flex flex-col">
         <input
+            required
             type="email"
             class="w-full h-[50px] border-2 p-3"
             id="email"
@@ -155,6 +160,7 @@
         </div>
         <div class="w-full lg:w-1/2 flex flex-col">
         <input
+            required
             type="tel"
             class="w-full h-[50px] border-2 p-3"
             id="phone"
@@ -173,7 +179,8 @@
         class="w-full h-[50px] border-2 p-3"
         id="date"
         placeholder="Termiz City"
-        name="date"
+        name="address"
+        required
         />
         <label
         for="date"
@@ -187,26 +194,38 @@
             class="w-full h-[50px] border-2 p-3"
             id="guests"
             placeholder="12"
-            name="guests"
+            name="peopleCount"
+            required
         />
         <label
             for="guests"
             class="text-[12px] mt-1 ml-1"
         >Mehmonxonalar Soni</label>
+        
         </div>
         <div class="w-full lg:w-1/2 flex flex-col">
         <select
             name="country"
             id="country"
             class="border-2 p-3"
+            required
         >
             <option value="default" selected disabled>Mamlakatingizni tanlang</option>
         </select>
         </div>
     </div>
     </div>
-    <h4 id="total-price" class="my-5 text-[30px]">$500</h4>
+
+    <div>
+        <span class="my-5 text-[30px]">$</span><input id="total-body" class="my-5 text-[30px]" type="number" name="amount" value="{{ServicesDB.allAmount}}" disabled>
+    </div>
+
+    {{!-- <h4 id="total-price" class="my-5 text-[30px]">${{ServicesDB.allAmount}}</h4> --}}
     <button class="p-3 bg-[#30c2c2] hover:bg-[#32a5a5] text-white duration-500">Payme Orqali To'lash</button>
     <button class="p-3 bg-[#eaad00] hover:bg-[#a98215] text-white duration-500">Visa Orqali To'lash</button>
+    </form>
 </div>
 </section>
+<script>
+    const price = {{ServicesDB.allAmount}}
+</script>

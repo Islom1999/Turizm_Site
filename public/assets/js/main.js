@@ -1,6 +1,6 @@
 const $ = el => document.querySelector(el);
 const $All = el => document.querySelectorAll(el);
-const usernameRegEx = /^[a-zA-Z\-]+$/;
+const usernameRegEx = /([a-zA-Z0-9\-\_])\w+/g;
 
 const handleNavbarOpenMenu = () => {
   const arrowsContainer = $("#navbar-arrows");
@@ -70,10 +70,10 @@ const handleResgisterValidation = () => {
 
     if (!usernameValResult) return callError("tahallus faqat katta kichik harflar va - belgisidan tashkil topishi mumkin!");
 
-    const res = await fetch("https://my-travel.uz/eng/user/getusers");
+    const res = await fetch("http://localhost:5000/eng/user/getusers");
     const users = await res.json();
 
-    for (let user of users) {
+    for (let user of users.data) {
       if (user.userName === username.value) return callError("Ushbu tahallus allaqachon ishlatilgan, Iltimos boshqa tahallus yozing!");
 
       if (user.email === email.value) return callError("Ushbu Elektron pochta ishlatilgan, Iltimos boshqa elektron pochta yozing!");
@@ -90,7 +90,7 @@ const handleResgisterValidation = () => {
       passRepeat: passCon.value
     }
 
-    const registerRes = await fetch("https://my-travel.uz/eng/user/register", {
+    const registerRes = await fetch("http://localhost:5000/eng/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -6,7 +6,7 @@ const {
     getUserPage,
     outUser,
     getUsers
-} = require('../controllers/users/userEngControllers')
+} = require('../controllers/users/userRuControllers')
 
 const {userGuest} = require('../middlewares/userLogin')
 
