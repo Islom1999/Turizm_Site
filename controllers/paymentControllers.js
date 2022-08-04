@@ -32,7 +32,7 @@ const createOrder = async(req,res) => {
         await Order.create(newOrder)
 
     }catch(err){
-        // console.log(err)
+        console.log(err)
     }
 }
 

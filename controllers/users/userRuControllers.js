@@ -52,7 +52,6 @@ const loginUser = async(req,res) => {
             
             return res.redirect('/eng/user/dashboard')
         }else{
-            console.log('salom')
             return res.redirect('/eng/')
         }
     }catch(err){

@@ -9,8 +9,8 @@ const MongoStore = require('connect-mongodb-session')(session)
 const cors = require('cors')
 
 // const flash = require('connect-flash')
-// const helmet = require("helmet")
-// const compression = require('compression')
+const helmet = require("helmet")
+const compression = require('compression')
 
 const app = express()
 
@@ -37,7 +37,7 @@ app.use(session({
 }))
 // app.use(flash()) 
 // app.use(helmet())
-// app.use(compression())
+app.use(compression())
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -50,6 +50,8 @@ app.get('/', (req, res) => {
 })
 
 app.use('/eng/user', require('./routes/userEngRoutes'))
+app.use('/uz/user', require('./routes/userUzRoutes'))
+app.use('/ru/user', require('./routes/userRuRoutes'))
 
 app.use('/uz', require('./routes/pagesUz'))
 app.use('/eng', require('./routes/pagesEng'))
