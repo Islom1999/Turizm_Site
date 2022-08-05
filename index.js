@@ -1,5 +1,5 @@
 const express = require('express')
-const { engine } = require('express-handlebars')
+const {engine} = require('express-handlebars')
 const path = require('path')
 const env = require('dotenv')
 const connectDB = require('./config/configDb')
@@ -14,7 +14,7 @@ const compression = require('compression')
 
 const app = express()
 
-env.config() 
+env.config()
 
 connectDB()
 
@@ -43,7 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('.hbs', engine({extname: '.hbs'}));
 app.set('view engine', 'hbs');
-app.set('views', './views');  
+app.set('views', './views');
 
 app.get('/', (req, res) => {
     res.redirect('/eng/')
@@ -56,16 +56,16 @@ app.use('/ru/user', require('./routes/userRuRoutes'))
 app.use('/uz', require('./routes/pagesUz'))
 app.use('/eng', require('./routes/pagesEng'))
 app.use('/ru', require('./routes/pagesRu'))
- 
+
 app.use('/payment', require('./routes/paymentRoute'))
 app.use('/admin', require('./routes/adminRoutes'))
-
+app.use('/merchant', require('./paysys/payme/merchant'))
 app.get('/:id', (req, res) => {
     res.redirect('/eng/')
 })
 
 const PORT = process.env.PORT || 5000
 
-app.listen(PORT, () => { 
+app.listen(PORT, () => {
     console.log(PORT)
 })

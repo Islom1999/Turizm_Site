@@ -1,37 +1,35 @@
 
 const Order = require('../model/orderModel')
 
-const createOrder = async(req,res) => {
-    try{
+const createOrder = async (req, res) => {
+    try {
         const orderData = await Order.find()
-        const { firstName, lastName, date, email, phone, address, peopleCount, country, amount } = req.body
+        const {firstName, lastName, date, email, phone, address, peopleCount, country, amount} = req.body
+        let number = 1
+        const oldNumber = orderData[orderData.length - 1]?.number
 
-        let number = 1    
-
-        const oldNumber = orderData[orderData.length - 1].number
-
-        if(Boolean(oldNumber)){
+        if (Boolean(oldNumber)) {
             number = parseInt(oldNumber) + 1
         }
-        console.log(number)
-    
         const newOrder = {
             number,
-            firstName, 
-            lastName, 
+            firstName,
+            lastName,
             date,
-            email, 
-            phone, 
-            address, 
-            peopleCount, 
-            country, 
-            amount
+            email,
+            phone,
+            address,
+            peopleCount,
+            country,
+            amount,
+            created_at: new Date()
         }
 
-        console.log(newOrder)
-        await Order.create(newOrder)
-
-    }catch(err){
+        const result = await Order.create(newOrder)
+        const link = Buffer.from(`m=${process.env.MERCHANT_ID};ac.order_id=${result.number};a=${result.amount}`).toString("base64")
+        const payme_link = `https://checkout.paycom.uz/${link}`
+        res.status(200).send(payme_link)
+    } catch (err) {
         console.log(err)
     }
 }
