@@ -51,6 +51,10 @@ const Orders = new mongoose.Schema(
             type: 'number', 
             required: true, 
         },
+        paid_at: {
+            type: Date,
+            default: null
+        },
         
         created_at: {
             type: Date,
