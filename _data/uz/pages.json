@@ -38,6 +38,10 @@
                 "hotels": {
                     "title": "Eng Yaxshi Mehmonxonalar",
                     "descr": "Biz eng yuqori sifat bilan eng sifatli mehmonxonalarni sizga taklif qilamiz."
+                },
+                "transport": {
+                    "title": "Sizlar uchun transportlarimiz",
+                    "descr": "Biz eng yuqori sifat bilan eng sifatli transportlarimizni sizga taklif qilamiz."
                 }
             },
             "btns": {

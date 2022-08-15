@@ -5,19 +5,19 @@
         "cost":[ 
             {
                 "content": "Cost of transport service",
-                "amount": "260"
+                "amount": "260000"
             },
             {
                 "content": "2 nights hotel expenses",
-                "amount": "300"
+                "amount": "300000"
             },
             {
                 "content": "Cost of meals",
-                "amount": "200"
+                "amount": "200000"
             },
             {
                 "content": "Guide service and comission fees",
-                "amount": "90"
+                "amount": "90000"
             }
         ],
         "isLeft": true
@@ -28,19 +28,19 @@
         "cost":[ 
             {
                 "content": "Cost of transport service",
-                "amount": "175"
+                "amount": "175000"
             },
             {
                 "content": "1 night hotel expenses",
-                "amount": "150"
+                "amount": "150000"
             },
             {
                 "content": "Cost of meals",
-                "amount": "100"
+                "amount": "100000"
             },
             {
                 "content": "Guide service and comission fees",
-                "amount": "90"
+                "amount": "90000"
             }
         ]
     },
@@ -50,19 +50,19 @@
         "cost":[ 
             {
                 "content": "Cost of transport service",
-                "amount": "180"
+                "amount": "180000"
             },
             {
                 "content": "1 night hotel expenses",
-                "amount": "150"
+                "amount": "150000"
             },
             {
                 "content": "Cost of meals",
-                "amount": "100"
+                "amount": "100000"
             },
             {
                 "content": "Guide service and comission fees",
-                "amount": "90"
+                "amount": "90000"
             }
         ],
         "isLeft": true
@@ -73,19 +73,19 @@
         "cost":[ 
             {
                 "content": "Cost of transport service",
-                "amount": "350"
+                "amount": "350000"
             },
             {
                 "content": "2 nights hotel expenses",
-                "amount": "300"
+                "amount": "300000"
             },
             {
                 "content": "Cost of meals",
-                "amount": "200"
+                "amount": "200000"
             },
             {
                 "content": "Guide service and comission fees",
-                "amount": "100"
+                "amount": "100000"
             }
         ]
     }

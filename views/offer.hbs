@@ -69,7 +69,7 @@
                         <p class="w-[80%]">
                         {{content}}
                         </p>
-                        <p class="w-[20%]">{{amount}} USD</p>
+                        <p class="w-[20%]">{{amount}} So'm</p>
                     </li>
                 {{/each}}
                     <li class="border-b border-gray-400"></li>
@@ -83,7 +83,7 @@
             >
                 {{ServicesDB.btn}}
             </a>
-            <p class="text-[20px]">{{ServicesDB.allAmount}} USD</p>
+            <p class="text-[20px]">{{ServicesDB.allAmount}} So'm</p>
         </div>
     </div>
     <img
@@ -216,9 +216,10 @@
     </div>
     </div>
     <div>
-        <span class="my-5 text-[30px]">$</span><input id="total-body" class="my-5 text-[30px]" type="number" name="amount" value="{{ServicesDB.allAmount}}" disabled>
+        <input id="total-body" class="my-5 text-[30px]" type="number" name="amount" value="{{ServicesDB.allAmount}}" hidden>
+
     </div>
-    {{!-- <h4 id="total-price" class="my-5 text-[30px]">${{ServicesDB.allAmount}}</h4> --}}
+    <h4 id="total-price" class="my-5 text-[30px]">${{ServicesDB.allAmount}}</h4>
     <button class="p-3 bg-[#30c2c2] hover:bg-[#32a5a5] text-white duration-500">Payme Orqali To'lash</button>
     <button class="p-3 bg-[#eaad00] hover:bg-[#a98215] text-white duration-500">Visa Orqali To'lash</button>
     </form>

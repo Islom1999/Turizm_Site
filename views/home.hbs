@@ -224,6 +224,72 @@
     </button>
 </div>
 </section>
+<!-- BEST Transport -->
+<section class="container mx-auto px-10 pb-10 text-black mt-24">
+<div class="relative pb-20">
+    <div
+    class="p-0 md:px-[100px] lg:px-[200px] xl:px-[278px] text-center space-y-[31px] font-prompt"
+    >
+    <h4 class="text-[35px] md:text-[40px] font-medium leading-[53px]">
+        {{HomeDB.section.transport.title}}
+    </h4>
+    <p class="text-[18px] font-light leading-[31px] text-main-gray-100">
+        {{HomeDB.section.transport.descr}}
+    </p>
+    </div>
+</div>
+<div
+    class="grid grid-cols-1 md:gird-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8"
+>
+    {{#if TransportDefaultDB}}
+        {{#each TransportDefaultDB}}
+            <div
+            class="bg-[url({{img}})] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
+            >
+            <div
+                class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
+            >
+                <h5 class="font-medium text-[25px] mb-2">{{title}}</h5>
+                <p class="text-[12px] leading-0 text-main-gray-200 font-light">
+                {{descr}}
+                </p>
+            </div>
+            </div>
+        {{/each}}
+    {{else}}
+        <h1>Hozircha hech qanaqa ma'lumot kiritilmagan</h1>
+    {{/if}}
+</div>
+<div
+    id="more-best-transports"
+    class="grid-cols-1 md:gird-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8 mt-5 !hidden"
+>
+    {{#if TransportLoadDB}}
+        {{#each TransportLoadDB}}
+            <div
+            class="bg-[url({{img}})] group bg-no-repeat h-[180px] sm:h-[300px] lg:h-56 rounded-lg relative bg-hover-scale"
+            >
+            <div
+                class="opacity-0 group-hover:opacity-100 duration-500 absolute top-0 left-0 w-full h-full bg-[#221f1f9b] text-white grid place-content-center text-center p-4 rounded-lg"
+            >
+                <h5 class="font-medium text-[25px] mb-2">{{title}}</h5>
+                <p class="text-[12px] leading-0 text-main-gray-200 font-light">
+                {{descr}}
+                </p>
+            </div>
+            </div>
+        {{/each}}
+    {{/if}}
+</div>
+<div class="grid place-content-center mt-5">
+    <button
+    id="load-more-best-transport"
+    class="block w-fit px-6 py-[13px] mt-5 border border-main-green-100 hover:bg-main-green-100 hover:text-white duration-200"
+    >
+    {{HomeDB.btns.load}}
+    </button>
+</div>
+</section>
 <!-- SERVCIES -->
 <section class="container mx-auto font-prompt pt-10 py-20">
 <div
@@ -263,7 +329,7 @@
                             <p class="w-[80%]">
                             {{content}}
                             </p>
-                            <p class="w-[20%]">{{amount}} USD</p>
+                            <p class="w-[20%]">{{amount}} So'm</p>
                         </li>
                         {{/each}}
                         <li class="border-b border-gray-400"></li>
@@ -277,7 +343,7 @@
                 >
                     {{HomeDB.btns.learn}}
                 </a>
-                <p class="text-[20px]">{{AmountLeft}} USD</p>
+                <p class="text-[20px]">{{AmountLeft}} So'm</p>
                 </div>
             </div>
             <img
@@ -316,7 +382,7 @@
                         <p class="w-[80%]">
                         {{content}}
                         </p>
-                        <p class="w-[20%]">{{amount}} USD</p>
+                        <p class="w-[20%]">{{amount}} So'm</p>
                     </li>
                     {{/each}}
                     <li class="border-b border-gray-400"></li>
@@ -331,7 +397,7 @@
             >
                 {{HomeDB.btns.learn}}
             </a>
-            <p class="text-[20px]">{{AmountRight}} USD</p>
+            <p class="text-[20px]">{{AmountRight}} So'm</p>
             </div>
         </div>
         <img

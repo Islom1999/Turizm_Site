@@ -88,6 +88,10 @@ const PagesModelRU = new mongoose.Schema({
             hotels: {
                 title: {type: 'string', required: true},
                 descr: {type: 'string', required: true}
+            },
+            transport: {
+                title: {type: 'string', required: true},
+                descr: {type: 'string', required: true}
             }
         },
         btns: {

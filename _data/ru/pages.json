@@ -38,6 +38,10 @@
                 "hotels": {
                     "title": "Самые лучшие отели",
                     "descr": "Мы предлагаем вам отели с самым высоким качеством обслуживания и сервисом."
+                },
+                "transport": {
+                    "title": "Sizlar uchun transportlarimiz",
+                    "descr": "Biz eng yuqori sifat bilan eng sifatli transportlarimizni sizga taklif qilamiz."
                 }
             },
             "btns": {

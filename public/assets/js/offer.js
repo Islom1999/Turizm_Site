@@ -257,13 +257,13 @@ const addCountriesToSelect = () => {
 
 const handleTotalPrice = () => {
   const guests = $("#guests");
-  // const total = $("#total-price");
+  const total = $("#total-price");
   const totalBody = $("#total-body");
   // const price = 0; 
 
   guests.addEventListener("change", e => {
     console.log(e.target.value)
-    // total.innerText = `$${+e.target.value * price}`;
+    total.innerText = `$${+e.target.value * price}`;
     totalBody.value = +e.target.value * price
   });
 }

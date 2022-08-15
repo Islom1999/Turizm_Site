@@ -10,7 +10,7 @@ const isAccountExist = async (account) => {
     const order = await OrderModel.findOne({number: +account.order_id});
     if (!order) return false;
     if (order.paid_at) return false;
-    return true;
+    return true; 
 }
 
 const getPayingCost = async (account) => {

@@ -1,9 +1,9 @@
 
 const bcrypt = require('bcryptjs')
 
-const pass = 'Boysun_1999'
+const pass = ',vbdslfdssad'
 
-const salt = bcrypt.genSaltSync(10);
+const salt = bcrypt.genSaltSync(5);
 const hash = bcrypt.hashSync(pass, salt)
 
 console.log(hash)

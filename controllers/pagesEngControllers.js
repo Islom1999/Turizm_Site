@@ -2,14 +2,15 @@
 const Pages = require('../model/eng/PagesModel')
 const Place = require('../model/eng/PlaceModel')
 const Hotel = require('../model/eng/HotelModel')
+const Transport = require('../model/eng/TransportModel')
 const Services = require('../model/eng/ServicesModel')
-
 
 const getHomePage = async (req, res) => {
     try {
         const PagesDB = await Pages.find().lean()
         const PlaceDB = await Place.find().lean()
         const HotelDB = await Hotel.find().lean()
+        const TransportDB = await Transport.find().lean()
         const ServicesDB = await Services.find().lean()
 
         let AmountLeft = 0
@@ -38,6 +39,9 @@ const getHomePage = async (req, res) => {
 
             HotelDefaultDB: HotelDB.slice(0, 4),
             HotelLoadDB: HotelDB.slice(4, HotelDB.length),
+
+            TransportDefaultDB: TransportDB.slice(0, 4),
+            TransportLoadDB: TransportDB.slice(4, TransportDB.length),
 
             ServicesPage: PagesDB[0]?.servicesPage,
 

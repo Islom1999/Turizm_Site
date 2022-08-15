@@ -48,8 +48,12 @@ const handleLoadMoreData = () => {
   const bestHotelsBtn = $("#load-more-best-hotels");
   const moreBestHotels = $("#more-best-hotels");
 
+  const transportBtn = $("#load-more-best-transport");
+  const Transports = $("#more-best-transports");
+
   handleLoadMore(popularPlacesBtn, morePopularPlaces);
   handleLoadMore(bestHotelsBtn, moreBestHotels);
+  handleLoadMore(transportBtn, Transports);
 }
 
 handleMainSlider();
