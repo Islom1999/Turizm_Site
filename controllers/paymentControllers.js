@@ -29,6 +29,7 @@ const createOrder = async (req, res) => {
 
         const result = await Order.create(newOrder)
         const link = Buffer.from(`m=${process.env.MERCHANT_ID};ac.order_id=${result.number};a=${result.amount}`).toString("base64")
+        console.log(link)
         const payme_link = `https://checkout.paycom.uz/${link}`
         res.redirect(payme_link)
     } catch (err) {

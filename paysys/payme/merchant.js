@@ -5,7 +5,6 @@ const OrderModel = require('../../model/orderModel')
 
 const router = Router()
 
-
 const isAccountExist = async (account) => {
     const order = await OrderModel.findOne({number: +account.order_id});
     if (!order) return false;
