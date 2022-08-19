@@ -21,9 +21,12 @@ const markAsPaid = async (account, amount) => {
     const order = await OrderModel.findOne({number: +account.order_id});
     // Order mark as paid here
     console.log(`Order Paid ${order.number} amount -> ${amount}`)
-    await OrderModel.updateOne({_id: order._id}, {$set: {paid_at: new Date()}})
+    await OrderModel.updateOne({_id: order._id}, {$set: {created_paid: new Date(),paid_at:true}})
 }
-
+const markAsCancel =async (account)=>{
+    const order = await OrderModel.findOne({number: +account.order_id});
+    await OrderModel.updateOne({_id: order._id}, {$set: {paid_at: false,cancel_at_paid:new Date()}})
+}
 const paymeIntegrator = new PaymeIntegrator({
     db_str: process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/turizmSite',
     collection: `payme_transactions`,
@@ -32,8 +35,8 @@ const paymeIntegrator = new PaymeIntegrator({
     isAccountExist,
     markAsPaid,
     getPayingCost,
-    canCancel: async () => false,
-    markAsCancel: () => {},
+    canCancel: async () => true,
+    markAsCancel,
 })
 
 const authenticate = async (request, reply, next) => {

@@ -49,11 +49,17 @@ const Orders = new mongoose.Schema(
             type: 'number',
             required: true,
         },
-        paid_at: {
+        created_paid: {
             type: Date,
             default: null
         },
-
+        cancel_at_paid: {
+            type: Date,
+            default: null
+        },
+        paid_at: {
+            type: Boolean,
+        },
         created_at: {
             type: Date,
         }
